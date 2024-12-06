@@ -1,0 +1,56 @@
+---
+import type { Publication } from '../types/publication';
+
+interface Props {
+  publication: Publication;
+}
+
+const { publication } = Astro.props;
+---
+
+<div class="border-b border-gray-100 py-8 last:border-b-0">
+  <div class="space-y-4">
+    <div>
+      <a 
+        href={publication.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-lg font-semibold hover:text-accent transition-colors"
+      >
+        {publication.title}
+      </a>
+      <p class="text-secondary mt-2 font-mono text-sm">
+        {publication.authors.join(", ")}
+      </p>
+      <p class="text-secondary text-sm font-mono">
+        {publication.journal}. {publication.year};{publication.volume}:{publication.pages}
+      </p>
+    </div>
+    
+    <div class="flex flex-wrap items-center gap-4 text-sm font-mono">
+      <a 
+        href={`https://doi.org/${publication.doi}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-secondary hover:text-accent transition-colors"
+      >
+        /doi
+      </a>
+      {publication.scopusId && (
+        <a 
+          href={`https://www.scopus.com/record/display.uri?eid=2-s2.0-${publication.scopusId}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-secondary hover:text-accent transition-colors"
+        >
+          /scopus
+        </a>
+      )}
+      {publication.impactFactor && (
+        <span class="text-secondary">
+          IF: {publication.impactFactor.toFixed(1)}
+        </span>
+      )}
+    </div>
+  </div>
+</div>

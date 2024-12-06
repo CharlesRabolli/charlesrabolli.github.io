@@ -1,0 +1,56 @@
+---
+import { AnimatedSection } from './AnimatedSection';
+import { Icon } from './Icons';
+
+const areas = [
+  {
+    title: "Clinical Medicine",
+    description: "Advancing patient care through evidence-based medicine and innovative therapeutic approaches in cardiology.",
+    icon: "medicine",
+    gradient: "from-medical-light via-white to-medical-light hover:from-medical-light hover:via-white hover:to-medical",
+  },
+  {
+    title: "Cardiac Research",
+    description: "Investigating molecular mechanisms of heart disease through RNA biology and epitranscriptomics.",
+    icon: "heart",
+    gradient: "from-engineering-light via-white to-engineering-light hover:from-engineering-light hover:via-white hover:to-engineering",
+  },
+  {
+    title: "Engineering",
+    description: "Developing novel medical devices and diagnostic platforms for early disease detection and monitoring.",
+    icon: "engineering",
+    gradient: "from-research-light via-white to-research-light hover:from-research-light hover:via-white hover:to-research",
+  },
+  {
+    title: "AI in Medicine",
+    description: "Implementing machine learning algorithms for medical image analysis and disease prediction.",
+    icon: "ai",
+    gradient: "from-medical-dark/10 via-white to-medical-dark/10 hover:from-medical-dark/20 hover:via-white hover:to-medical-dark/20",
+  }
+];
+---
+
+<section id="research" class="py-20 bg-gradient-to-b from-white to-background">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <AnimatedSection client:visible>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900">Research Focus</h2>
+        <p class="mt-4 text-xl text-gray-600">Bridging clinical medicine and engineering innovation</p>
+      </div>
+    </AnimatedSection>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {areas.map((area, index) => (
+        <AnimatedSection client:visible delay={index * 0.2}>
+          <div class={`bg-gradient-to-br ${area.gradient} rounded-xl p-8 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 group`}>
+            <div class="text-primary mb-4 transform group-hover:scale-110 transition-transform duration-300">
+              <Icon name={area.icon} client:visible />
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">{area.title}</h3>
+            <p class="text-gray-600">{area.description}</p>
+          </div>
+        </AnimatedSection>
+      ))}
+    </div>
+  </div>
+</section>

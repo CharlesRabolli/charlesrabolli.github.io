@@ -1,0 +1,14 @@
+---
+import PublicationCard from './PublicationCard.astro';
+import type { Publication } from '../types/publication';
+
+interface Props {
+  publications: Publication[];
+}
+
+const { publications } = Astro.props;
+---
+
+<div class="space-y-6">
+  {publications.map(pub => <PublicationCard publication={pub} />)}
+</div>

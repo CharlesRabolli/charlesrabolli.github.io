@@ -1,0 +1,52 @@
+---
+import '@fontsource/inter';
+import '@fontsource/jetbrains-mono';
+import { ScrollProgress } from '../components/ScrollProgress';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Charles Rabolli - MD/PhD candidate, researcher, and innovator" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-background text-primary">
+    <ScrollProgress client:load />
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-medical-light shadow-sm">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex">
+            <a href="/" class="flex items-center font-mono text-primary hover:text-medical-dark transition-colors">
+              charles rabolli
+            </a>
+          </div>
+          <div class="hidden sm:flex sm:items-center sm:space-x-8 font-mono">
+            <a href="/#about" class="text-secondary hover:text-medical-dark transition-colors">about</a>
+            <a href="/#research" class="text-secondary hover:text-medical-dark transition-colors">research</a>
+            <a href="/#publications" class="text-secondary hover:text-medical-dark transition-colors">publications</a>
+            <a href="/#contact" class="text-secondary hover:text-medical-dark transition-colors">contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <slot />
+    <footer class="border-t border-medical-light mt-20 bg-white">
+      <div class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="text-center text-secondary font-mono text-sm">
+          <p>&copy; {new Date().getFullYear()} Charles Rabolli</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

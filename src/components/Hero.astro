@@ -1,0 +1,31 @@
+---
+import { AnimatedSection } from './AnimatedSection';
+---
+
+<section class="min-h-screen flex items-center justify-center pt-16 bg-gradient-to-b from-primary-light via-background-light to-medical-light">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <AnimatedSection client:load>
+        <img 
+          src="/headshot.jpg" 
+          alt="Charles Rabolli"
+          width="160"
+          height="160"
+          class="w-40 h-40 rounded-full mx-auto mb-8 shadow-xl hover:shadow-2xl transition-all duration-500"
+        />
+        <h1 class="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary-dark via-medical-dark to-engineering-dark">
+          Charles Rabolli
+        </h1>
+        <div class="text-lg text-gray-700 space-y-2">
+          <p class="font-semibold">MD/PhD Candidate @ Ohio State University</p>
+          <p class="text-primary-dark">Medicine | Engineering | Cardiac Research | AI</p>
+        </div>
+        <div class="mt-8 flex justify-center space-x-6">
+          <a href="https://github.com/CharlesRabolli" class="text-gray-600 hover:text-primary-dark transition-colors">github</a>
+          <a href="https://www.linkedin.com/feed/" class="text-gray-600 hover:text-primary-dark transition-colors">linkedin</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/?term=charles+rabolli&sort=date" class="text-gray-600 hover:text-primary-dark transition-colors">pubmed</a>
+        </div>
+      </AnimatedSection>
+    </div>
+  </div>
+</section>
