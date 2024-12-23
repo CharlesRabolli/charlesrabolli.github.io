@@ -54,44 +54,47 @@ interests:
   - Business/Entrepreneurship
 
 education:
-  - area: PhD Biomedical Engineering
+  - area: MD; Doctor of Medicine
     institution: The Ohio State University
-    date_start: 2021-03-01
-    date_end: 2025-03-31
+    date_start: 2019-08-01
+    date_end: 2027-05-01
     summary: |
       Thesis on _Why LLMs are awesome_. Supervised by [Prof Federica Accornero](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
     button:
       text: 'Read Thesis'
       url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.8/4.0
+  - area: PhD Biomedical Engineering
+    institution: The Ohio State University
+    date_start: 2021-03-01
+    date_end: 2025-03-31
+    summary: |2-
+      GPA: 3.94/4.0
+      Thesis on _RNA Modifications (Epitranscriptome) in cardiac biology_. Supervised by [Prof Federica Accornero](https://example.com). Presented at multiple conferences with multiple papers.
 
       Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+      - Cardiovascular Bioengineering
+      - Advanced Tissue Engineering
+      - Engineering Cell Plasticity
+      - Machine Learning for BMEs
+      - Neural Networks
+  - area: BSc Biomedical Engineering
+    institution: Rutgers University
+    date_start: 2014-08-01
+    date_end: 2018-05-01
     summary: |
-      GPA: 3.4/4.0
+      GPA: 3.95/4.0
       
       Courses included:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
+  - position: Visiting Scholar
+    company_name: Brown University
     company_url: ''
     company_logo: ''
-    date_start: 2021-01-01
-    date_end: ''
+    date_start: 2023-08-01
+    date_end: 2025-04-15
     summary: |2-
       Responsibilities include:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -116,11 +119,11 @@ skills:
     items:
       - name: Python
         description: ''
-        percent: 80
+        percent: 70
         icon: code-bracket
       - name: Data Science
         description: ''
-        percent: 100
+        percent: 70
         icon: chart-bar
       - name: SQL
         description: ''
@@ -146,23 +149,25 @@ skills:
 languages:
   - name: English
     percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
+  - name: Italian
+    percent: 50
+  - name: German
     percent: 25
+  - name: Japanese
+    percent: 10
 
 # Awards.
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
-  - title: Neural Networks and Deep Learning
-    url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: '2023-11-25'
-    awarder: Coursera
+  - title: NIH NHLBI F30
+    url: https://reporter.nih.gov/search/lMvL_0QI-0ieR4uiD1ouRg/project-details/10676427
+    date: '2023-07-01'
+    awarder: National Institutes of Health
     icon: coursera
     summary: |
-      I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
+      I studied the N6-methyladenosine (m6A) binding protein YTHDF3 in the cardiovascular system.
   - title: Blockchain Fundamentals
     url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
     date: '2023-07-01'
@@ -185,4 +190,4 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Charles Rabolli is an MD/PhD of Biomedical Engineering at The Ohio State University. His research interests include RNA Biology, cardiovsacular physiology and machine learning. 
