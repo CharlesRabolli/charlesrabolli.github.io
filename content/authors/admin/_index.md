@@ -190,4 +190,8 @@ awards:
 
 ## About Me
 
-Charles Rabolli is an MD/PhD of Biomedical Engineering at The Ohio State University. His research interests include RNA Biology, cardiovsacular physiology and machine learning. 
+MD/PhD student in Biomedical Engineering with a focus on RNA biology, systems medicine, and innovation. My research explores how RNA mechanisms shape cardiovascular disease and how engineering approaches can unlock new diagnostics and therapeutics.
+
+Beyond the lab, I bring experience in translational science, cross-disciplinary collaboration, and strategy at the interface of medicine and technology. I’ve worked on projects that span discovery, product design, and entrepreneurial execution, bridging research with real-world impact.
+
+I’m passionate about building at the intersection of medicine, engineering, and innovation, and I thrive in environments where bold ideas and strategic thinking converge to transform healthcare.
