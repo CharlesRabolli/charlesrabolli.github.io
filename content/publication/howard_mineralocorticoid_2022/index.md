@@ -1,14 +1,14 @@
 ---
 title: 'Mineralocorticoid receptor antagonists and glucocorticoids differentially affect skeletal muscle inflammation and pathology in muscular dystrophy'
 authors:
-- Zachary M. Howard
-- Chetan K. Gomatam
+- Zachary M Howard
+- Chetan K Gomatam
 - admin
 - Jeovanna Lowe
-- Arden B. Piepho
-- Shyam S. Bansal
+- Arden B Piepho
+- Shyam S Bansal
 - Federica Accornero
-- Jill A. Rafael-Fortney
+- Jill A Rafael-Fortney
 date: '2022-01-01T00:00:00Z'
 doi: '10.1172/jci.insight.159875'
 publishDate: '2022-01-01T00:00:00Z'
