@@ -1,13 +1,13 @@
 ---
 title: 'YTHDF2 governs muscle size through a targeted modulation of proteostasis'
 authors:
-- Christopher J. Gilbert
+- Christopher J Gilbert
 - admin
-- Volha A. Golubeva
-- Kristina M. Sattler
+- Volha A Golubeva
+- Kristina M Sattler
 - Meifang Wang
 - Arsh Ketabforoush
-- W. David Arnold
+- W David Arnold
 - Christoph Lepper
 - Federica Accornero
 date: '2024-01-01T00:00:00Z'
