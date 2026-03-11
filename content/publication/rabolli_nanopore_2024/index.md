@@ -2,9 +2,9 @@
 title: 'Nanopore Detection of METTL3-Dependent m6A-Modified mRNA Reveals a New Mechanism Regulating Cardiomyocyte Mitochondrial Metabolism'
 authors:
 - admin
-- Isabel S. Naarmann-de Vries
-- Catherine A. Makarewich
-- Kedryn K. Baskin
+- Isabel S Naarmann-de Vries
+- Catherine A Makarewich
+- Kedryn K Baskin
 - Christoph Dieterich
 - Federica Accornero
 date: '2024-01-01T00:00:00Z'
