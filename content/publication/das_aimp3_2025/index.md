@@ -1,15 +1,15 @@
 ---
 title: 'AIMP3 maintains cardiac homeostasis by regulating the editing activity of methionyl-tRNA synthetase'
 authors:
-- Anindhya Sundar Das
+- Anindhya S Das
 - admin
-- Christopher R. Martens
-- H. K. Jiang
-- Y. Zhang
-- A. A. Zimmer
-- K. Lin
-- Kedryn K. Baskin
-- Juan D. Alfonzo
+- Colton R Martens
+- Han-Kai Jiang
+- Yingshen Zhang
+- Aubree A Zimmer
+- Kevin Lin
+- Kedryn K Baskin
+- Juan D Alfonzo
 - Federica Accornero
 date: '2025-01-01T00:00:00Z'
 doi: '10.1038/s44161-025-00670-w'
