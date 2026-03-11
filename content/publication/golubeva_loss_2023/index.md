@@ -1,12 +1,12 @@
 ---
 title: 'Loss of YTHDF2 Alters the Expression ofÂ m6A-Modified Myzap and Causes Adverse Cardiac Remodeling'
 authors:
-- Volha A. Golubeva
-- Lisa E. Dorn
-- Christopher J. Gilbert
+- Volha A Golubeva
+- Lisa E Dorn
+- Christopher J Gilbert
 - admin
 - Anindhya Sundar Das
-- Vishmi S. Wanasinghe
+- Vishmi S Wanasinghe
 - Roland Veress
 - Dmitry Terentyev
 - Federica Accornero
