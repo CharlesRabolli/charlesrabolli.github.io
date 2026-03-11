@@ -1,12 +1,12 @@
 ---
 title: 'CITED4 Protects Against Adverse Remodeling in Response to Physiological and Pathological Stress'
 authors:
-- Carolin LerchenmAller
+- Carolin Lerchenmüller
 - admin
 - Ashish Yeri
 - Robert Kitchen
-- Ane M. Salvador
-- Laura X. Liu
+- Ane M Salvador
+- Laura X Liu
 - Olivia Ziegler
 - Kirsty Danielson
 - Colin Platt
@@ -14,11 +14,11 @@ authors:
 - Federico Damilano
 - Piyusha Kundu
 - Eva Riechert
-- Hugo A. Katus
-- Jeffrey E. Saffitz
+- Hugo A Katus
+- Jeffrey E Saffitz
 - Hasmik Keshishian
-- Steven A. Carr
-- Vassilios J. Bezzerides
+- Steven A Carr
+- Vassilios J Bezzerides
 - Saumya Das
 - Anthony Rosenzweig
 date: '2020-01-01T00:00:00Z'
