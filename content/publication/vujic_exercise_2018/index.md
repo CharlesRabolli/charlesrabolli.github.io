@@ -2,16 +2,16 @@
 title: 'Exercise induces new cardiomyocyte generation in the adult mammalian heart'
 authors:
 - Ana Vujic
-- Carolin LerchenmAller
+- Carolin Lerchenmüller
 - Ting-Di Wu
 - Christelle Guillermier
 - admin
 - Emilia Gonzalez
-- Samuel E. Senyo
+- Samuel E Senyo
 - Xiaojun Liu
 - Jean-Luc Guerquin-Kern
-- Matthew L. Steinhauser
-- Richard T. Lee
+- Matthew L Steinhauser
+- Richard T Lee
 - Anthony Rosenzweig
 date: '2018-01-01T00:00:00Z'
 doi: '10.1038/s41467-018-04083-1'
