@@ -1,7 +1,7 @@
 ---
 title: 'Alginate encapsulation for bupivacaine delivery and mesenchymal stromal cell immunomodulatory cotherapy'
 authors:
-- Mollie S. Davis
+- Mollie S Davis
 - Ileana Marrero-Berrios
 - Isabel Perez
 - admin
@@ -9,7 +9,7 @@ authors:
 - Devasena Manchikalapati
 - Joseph Schianodicola
 - Hattiyangangadi Kamath
-- Rene S. Schloss
+- Rene S Schloss
 - Joel Yarmush
 date: '2019-01-01T00:00:00Z'
 doi: '10.2147/JIR.S192749'
