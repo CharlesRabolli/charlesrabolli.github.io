@@ -2,7 +2,7 @@
 title: 'Exercise induces new cardiomyocyte generation in the adult mammalian heart'
 authors:
 - Ana Vujic
-- Carolin LerchenmÃ¼ller
+- Carolin LerchenmAller
 - Ting-Di Wu
 - Christelle Guillermier
 - admin
