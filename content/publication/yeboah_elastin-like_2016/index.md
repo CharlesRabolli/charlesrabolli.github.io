@@ -2,9 +2,9 @@
 title: 'Elastin-like polypeptides: A strategic fusion partner for biologics'
 authors:
 - Agnes Yeboah
-- Rick I. Cohen
+- Rick I Cohen
 - admin
-- Martin L. Yarmush
+- Martin L Yarmush
 - Francois Berthiaume
 date: '2016-01-01T00:00:00Z'
 doi: '10.1002/bit.25998'
