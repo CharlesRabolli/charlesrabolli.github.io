@@ -1,25 +1,25 @@
 ---
 title: 'Restoration of Cardiomyogenesis in Aged Mouse Hearts by Voluntary Exercise'
 authors:
-- Carolin LerchenmAller
+- Carolin Lerchenmüller
 - Ana Vujic
 - Sonja Mittag
 - Annie Wang
 - admin
-- Chiara HeA
+- Chiara Heß
 - Fynn Betge
-- Ashraf Y. Rangrez
+- Ashraf Y Rangrez
 - Malay Chaklader
 - Christelle Guillermier
 - Frank Gyngard
-- Jason D. Roh
+- Jason D Roh
 - Haobo Li
-- Matthew L. Steinhauser
+- Matthew L Steinhauser
 - Norbert Frey
 - Beverly Rothermel
 - Christoph Dieterich
 - Anthony Rosenzweig
-- Richard T. Lee
+- Richard T Lee
 date: '2022-01-01T00:00:00Z'
 doi: '10.1161/CIRCULATIONAHA.121.057276'
 publishDate: '2022-01-01T00:00:00Z'
