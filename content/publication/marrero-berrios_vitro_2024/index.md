@@ -2,13 +2,13 @@
 title: 'In vitro inflammatory multi-cellular model of osteoarthritis'
 authors:
 - Ileana Marrero-Berrios
-- S. Elina Salter
+- S Elina Salter
 - Rishabh Hirday
 - admin
 - Andrea Tan
-- Clark T. Hung
-- Rene S. Schloss
-- Martin L. Yarmush
+- Clark T Hung
+- Rene S Schloss
+- Martin L Yarmush
 date: '2024-01-01T00:00:00Z'
 doi: '10.1016/j.ocarto.2023.100432'
 publishDate: '2024-01-01T00:00:00Z'
