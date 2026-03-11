@@ -1,19 +1,19 @@
 ---
 title: 'CITED4 gene therapy protects against maladaptive cardiac remodeling after ischemia/reperfusion injury in mice'
 authors:
-- Carolin LerchenmAller
-- Margaret H. Hastings
+- Carolin Lerchenmüller
+- Margaret H Hastings
 - admin
 - Fynn Betge
 - Mani Roshan
-- Laura X. Liu
+- Laura X Liu
 - Xiaojun Liu
-- Chiara HeA
-- Jason D. Roh
+- Chiara Heß
+- Jason D Roh
 - Colin Platt
 - Vassilios Bezzerides
 - Martin Busch
-- Hugo A. Katus
+- Hugo A Katus
 - Norbert Frey
 - Patrick Most
 - Anthony Rosenzweig
