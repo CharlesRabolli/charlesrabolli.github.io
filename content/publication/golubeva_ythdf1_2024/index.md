@@ -1,11 +1,11 @@
 ---
 title: 'YTHDF1 is pivotal for maintenance of cardiac homeostasis'
 authors:
-- Volha A. Golubeva
+- Volha A Golubeva
 - Anindhya Sundar Das
 - admin
-- Lisa E. Dorn
-- Jop H. van Berlo
+- Lisa E Dorn
+- Jop H van Berlo
 - Federica Accornero
 date: '2024-01-01T00:00:00Z'
 doi: '10.1016/j.yjmcc.2024.05.008'
