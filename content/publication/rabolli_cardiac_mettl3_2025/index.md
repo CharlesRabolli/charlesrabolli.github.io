@@ -2,11 +2,11 @@
 title: 'The cardiac METTL3/m6A pathway regulates the systemic response to Western diet'
 authors:
 - admin
-- Jacob Z. Longenecker
-- Isabel S. Naarmann-de Vries
-- Joselynn Serrano
-- Jennifer M. Petrosino
-- Georgios A. Kyriazis
+- Jacob Z Longenecker
+- Isabel S Naarmann-de Vries
+- Joan Serrano
+- Jennifer M Petrosino
+- George A Kyriazis
 - Christoph Dieterich
 - Federica Accornero
 date: '2025-01-01T00:00:00Z'
