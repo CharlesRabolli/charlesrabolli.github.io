@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Charles Rabolli
+title: Charles P. Rabolli
 
 # Name pronunciation (optional)
 name_pronunciation: ''
@@ -20,23 +20,21 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: MD/PhD Student
+role: MD Candidate & PhD
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: The Ohio State University; Brown University
-    url: 
+  - name: The Ohio State University
+    url: https://medicine.osu.edu/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'charles.rabolli@osu.edu'
+    url: 'mailto:charles.rabolli@osu.edu'
     label: E-mail Me
   - icon: brands/x
     url: https://twitter.com/GetResearchDev
-  #- icon: brands/instagram
-  #  url: https://www.instagram.com/
   - icon: brands/github
     url: https://github.com/charlesrabolli
   - icon: brands/linkedin
@@ -47,29 +45,27 @@ profiles:
     url: https://orcid.org/0000-0002-4383-8706
 
 interests:
+  - RNA Biology & Epitranscriptomics
   - Cardiovascular Research
-  - Engineering
-  - RNA Biology
+  - Translational Medicine
   - Artificial Intelligence
   - Business/Entrepreneurship
 
 education:
-  - area: MD; Doctor of Medicine
+  - area: MD, Doctor of Medicine
     institution: The Ohio State University
     date_start: 2019-08-01
     date_end: 2027-05-01
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Federica Accornero](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
+      Medical Scientist Training Program (MSTP). Currently completing core clinical rotations in Internal Medicine, Surgery, OB/GYN, Family Medicine, Pediatrics, Neurology, Psychiatry, and Emergency Medicine. Passed USMLE Step 1.
   - area: PhD Biomedical Engineering
     institution: The Ohio State University
     date_start: 2021-03-01
-    date_end: 2025-03-31
-    summary: |2-
-      GPA: 3.94/4.0
-      Thesis on _RNA Modifications (Epitranscriptome) in cardiac biology_. Supervised by [Prof Federica Accornero](https://example.com). Presented at multiple conferences with multiple papers.
+    date_end: 2025-05-01
+    summary: |
+      GPA: 3.943/4.0
+
+      Medical Scientist Training Program (MSTP). Thesis: *RNA Modifications (Epitranscriptome) in the maintenance of cardiac homeostasis*. Supervised by [Prof. Federica Accornero](https://accornerolab.com). Research used molecular biology, mouse models, nanopore sequencing, and multi-omics to reveal how m6A RNA methylation shapes cardiac function, metabolism, and remodeling.
 
       Courses included:
       - Cardiovascular Bioengineering
@@ -77,121 +73,165 @@ education:
       - Engineering Cell Plasticity
       - Machine Learning for BMEs
       - Neural Networks
-  - area: BSc Biomedical Engineering
+  - area: CORe — Credential of Readiness
+    institution: Harvard Business School Online
+    date_start: 2025-01-01
+    date_end: 2025-12-31
+    summary: |
+      Business analytics, economics for managers, and financial accounting.
+  - area: BSc Biomedical Engineering, Summa Cum Laude
     institution: Rutgers University
     date_start: 2014-08-01
     date_end: 2018-05-01
     summary: |
-      GPA: 3.95/4.0
-      
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      GPA: 3.952/4.0 (4.0 Major GPA)
+
+      Engineering Honors Academy. Dean's List every semester 2014–2018.
+
 work:
-  - position: Visiting Scholar
-    company_name: Brown University
+  - position: MD/PhD Researcher — AI Lab for Pathology Research (AI4Path)
+    company_name: The Ohio State University
     company_url: ''
     company_logo: ''
-    date_start: 2023-08-01
+    date_start: 2025-09-01
+    date_end: ''
+    summary: |2-
+      - Creating next-generation AI foundation models for pathology, leveraging large-scale histology datasets to transform diagnostic workflows.
+      - Curating and annotating colorectal carcinoma slides to generate high-quality training data powering scalable, intelligent interpretation of digital pathology images.
+  - position: MD Candidate — Clinical Rotations
+    company_name: The Ohio State University College of Medicine
+    company_url: ''
+    company_logo: ''
+    date_start: 2019-09-01
+    date_end: ''
+    summary: |2-
+      - Completing core clinical rotations in Internal Medicine, Surgery, OB/GYN, Family Medicine, Pediatrics, Neurology, Psychiatry, and Emergency Medicine.
+      - Training emphasizes systems-level clinical reasoning, interdisciplinary collaboration, and evidence-based decision-making.
+  - position: MD/PhD Researcher — Accornero Lab
+    company_name: The Ohio State University & Brown University
+    company_url: ''
+    company_logo: ''
+    date_start: 2021-02-01
     date_end: 2025-04-15
     summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
+      - Performed in vivo cardiac and metabolic studies using mouse models of heart failure and obesity to dissect how RNA methylation modulates systemic energy homeostasis.
+      - Executed comprehensive molecular assays including cell culture, transfection, RNA/protein isolation, qPCR, Western blotting, and immunofluorescence.
+      - Integrated molecular biology with multi-omics approaches to reveal RNA-driven mechanisms linking cardiac remodeling to adipose and metabolic reprogramming.
+      - Led nanopore sequencing experiments to detect METTL3-dependent m6A-modified mRNA in cardiomyocytes (published in *Circulation*, 2024).
+  - position: Fulbright Scholar
+    company_name: ICGEB — Giacca Lab, Molecular Medicine, Trieste, Italy
     company_url: ''
     company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+    date_start: 2018-10-01
+    date_end: 2019-07-31
+    summary: |2-
+      - Utilized a high-throughput, image-based drug screening platform with FDA-approved compound libraries to identify agents that enhance cardiomyocyte regeneration.
+      - Integrated cell culture, histology, and molecular biology to validate candidate compounds and uncover mechanisms driving cardiac repair.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
-  - name: Technical Skills
+  - name: Computational & Programming
     items:
-      - name: Python
-        description: ''
-        percent: 70
-        icon: code-bracket
-      - name: Data Science
-        description: ''
-        percent: 70
-        icon: chart-bar
-      - name: SQL
-        description: ''
-        percent: 40
-        icon: circle-stack
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Hiking
-        description: ''
-        percent: 60
-        icon: person-simple-walk
-      - name: Cats
+      - name: RStudio / R
         description: ''
         percent: 100
-        icon: cat
-      - name: Photography
+        icon: code-bracket
+      - name: Python
         description: ''
         percent: 80
-        icon: camera
+        icon: code-bracket
+      - name: Matlab
+        description: ''
+        percent: 80
+        icon: chart-bar
+  - name: Wet Lab & In Vivo
+    color: '#2d6a4f'
+    color_border: '#40916c'
+    items:
+      - name: Molecular Biology
+        description: 'DNA/RNA/protein isolation, qPCR, Western blotting, IHC, IF'
+        percent: 100
+        icon: circle-stack
+      - name: Mouse Models & Surgery
+        description: 'Transverse aortic constriction, colony management, genotyping'
+        percent: 100
+        icon: circle-stack
+      - name: Cell Culture
+        description: 'Primary cardiomyocytes, CRISPR knockdowns, viral overexpression'
+        percent: 100
+        icon: circle-stack
 
 languages:
   - name: English
     percent: 100
   - name: Italian
-    percent: 50
-  - name: German
-    percent: 25
-  - name: Japanese
-    percent: 10
+    percent: 75
 
 # Awards.
-#   Add/remove as many awards below as you like.
-#   Only `title`, `awarder`, and `date` are required.
-#   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
-  - title: NIH NHLBI F30
+  - title: NIH F30 Award (F30HL165812)
     url: https://reporter.nih.gov/search/lMvL_0QI-0ieR4uiD1ouRg/project-details/10676427
     date: '2023-07-01'
     awarder: National Institutes of Health
     icon: coursera
     summary: |
-      I studied the N6-methyladenosine (m6A) binding protein YTHDF3 in the cardiovascular system.
-  - title: Blockchain Fundamentals
-    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    date: '2023-07-01'
-    awarder: edX
-    icon: edx
+      Individual predoctoral fellowship investigating the N6-methyladenosine (m6A) binding protein YTHDF3 in the cardiovascular system. Funded 2023–2026.
+  - title: Medical Scientist Training Program (MSTP)
+    url: ''
+    date: '2019-08-01'
+    awarder: National Institute of General Medical Sciences, NIH
+    icon: coursera
     summary: |
-      Learned:
-      - Synthesize your own blockchain solutions
-      - Gain an in-depth understanding of the specific mechanics of Bitcoin
-      - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
-  - title: 'Object-Oriented Programming in R'
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
-    awarder: datacamp
-    icon: datacamp
+      Fully funded MD/PhD program at The Ohio State University (2019–2027).
+  - title: Fulbright U.S. Student Program Research Award
+    url: ''
+    date: '2018-09-01'
+    awarder: U.S. Department of State & J. William Fulbright Foreign Scholarship Board
+    icon: coursera
     summary: |
-      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
+      Full funding to conduct cardiac regeneration research at ICGEB in Trieste, Italy for 10 months (2018–2019).
+  - title: NIH T32 Predoctoral Trainee Fellow
+    url: ''
+    date: '2019-08-01'
+    awarder: National Institute of General Medical Sciences, NIH
+    icon: coursera
+    summary: |
+      T32 predoctoral fellowship during MSTP training at The Ohio State University (2019–2020).
+  - title: DAAD Rise Scholar
+    url: ''
+    date: '2017-06-01'
+    awarder: Deutscher Akademischer Austauschdienst (DAAD) — Heidelberg University Hospital
+    icon: coursera
+    summary: |
+      Competitive international research scholarship to conduct cardiovascular research in Heidelberg, Germany with Dr. Carolin Lerchenmüller (2017).
+  - title: American Heart Association Undergraduate Research Fellow
+    url: ''
+    date: '2016-06-01'
+    awarder: Massachusetts General Hospital / Harvard Medical School
+    icon: coursera
+    summary: |
+      AHA Founder's Affiliate Undergraduate Student Fellowship in the Cardiovascular Research Center, MGH (2016).
+  - title: 2nd Place — Ambulatory Care of the Future
+    url: ''
+    date: '2017-01-01'
+    awarder: Massachusetts General Hospital
+    icon: coursera
+    summary: |
+      $50,000 prize for a Point-of-Care Diagnostic for the Detection of Viral vs. Bacterial Infection. Served as Group Leader.
+  - title: 2nd Place — Biomedical Entrepreneurship Network Pitch Competition
+    url: ''
+    date: '2018-01-01'
+    awarder: Robert Wood Johnson University Hospital
+    icon: coursera
+    summary: |
+      $2,000 prize at a nationally competitive pitch competition presenting EPoC-MD™, a point-of-care microbial diagnostic.
 ---
 
 ## About Me
 
-MD/PhD student in Biomedical Engineering with a focus on RNA biology, systems medicine, and innovation. My research explores how RNA mechanisms shape cardiovascular disease and how engineering approaches can unlock new diagnostics and therapeutics.
+MD candidate and research scientist specializing in RNA biology, the epitranscriptome, and cardiovascular disease. My doctoral work (PhD, The Ohio State University, 2025) revealed how m6A RNA methylation shapes cardiac function, metabolism, and remodeling — using molecular biology, mouse models, nanopore sequencing, and multi-omics approaches.
 
-Beyond the lab, I bring experience in translational science, cross-disciplinary collaboration, and strategy at the interface of medicine and technology. I’ve worked on projects that span discovery, product design, and entrepreneurial execution, bridging research with real-world impact.
+I am currently completing my MD with core clinical rotations at OSU and conducting AI-driven digital pathology research at the AI4Path lab. My work bridges basic science, translational medicine, and innovation — from mechanistic discoveries in RNA biology to building diagnostic tools powered by machine learning.
 
-I’m passionate about building at the intersection of medicine, engineering, and innovation, and I thrive in environments where bold ideas and strategic thinking converge to transform healthcare.
+I am passionate about entrepreneurship and thrive at the intersection of medicine, engineering, and technology, translating bold ideas into real-world impact.
