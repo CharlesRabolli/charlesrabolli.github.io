@@ -1,0 +1,14 @@
+{
+  "type": "hbar",
+  "title": "Agreement depends on the diagnosis",
+  "subtitle": "Concordance of 115 U.S. pathologists with an expert consensus diagnosis on breast biopsies (Elmore et al., JAMA 2015).",
+  "unit": "%", "max": 100, "ticks": [0, 25, 50, 75, 100], "tickFormat": "{}%", "labelWidth": 210,
+  "valueHead": "Concordance",
+  "items": [
+    {"label": "Invasive carcinoma", "value": 96, "slot": 0, "detail": "96% concordant (663 interpretations); 4% underinterpreted."},
+    {"label": "Benign without atypia", "value": 87, "slot": 0, "detail": "87% concordant (2,070 interpretations); 13% overinterpreted."},
+    {"label": "Ductal carcinoma in situ", "value": 84, "slot": 0, "detail": "84% concordant (2,097 interpretations); 3% over-, 13% underinterpreted."},
+    {"label": "Atypical hyperplasia", "value": 48, "slot": 1, "em": true, "detail": "48% concordant (2,070 interpretations); 17% over-, 35% underinterpreted."},
+    {"label": "All cases", "value": 75.3, "display": "75.3%", "slot": 0, "em": true, "detail": "75.3% overall (5,194 of 6,900 interpretations)."}
+  ]
+}

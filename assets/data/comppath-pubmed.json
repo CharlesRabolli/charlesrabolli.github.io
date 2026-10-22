@@ -1,0 +1,52 @@
+{
+ "type": "line",
+ "title": "Machine learning meets the glass slide",
+ "subtitle": "PubMed records per year pairing digital or computational pathology / whole-slide images with deep learning, machine learning, AI, or foundation models.",
+ "xmin": 2010,
+ "xmax": 2025,
+ "xTicks": 5,
+ "yLabel": "papers per year",
+ "padR": 150,
+ "annotations": [
+  {
+   "x": 2016,
+   "label": "CAMELYON16",
+   "right": true
+  },
+  {
+   "x": 2019,
+   "label": "clinical-grade weak supervision",
+   "dy": 16
+  },
+  {
+   "x": 2024,
+   "label": "pathology foundation models",
+   "dy": 32,
+   "right": true
+  }
+ ],
+ "series": [
+  {
+   "name": "AI × digital pathology",
+   "slot": 0,
+   "values": {
+    "2010": 1,
+    "2011": 2,
+    "2012": 2,
+    "2013": 3,
+    "2014": 2,
+    "2015": 7,
+    "2016": 16,
+    "2017": 30,
+    "2018": 63,
+    "2019": 150,
+    "2020": 247,
+    "2021": 429,
+    "2022": 550,
+    "2023": 634,
+    "2024": 783,
+    "2025": 1071
+   }
+  }
+ ]
+}

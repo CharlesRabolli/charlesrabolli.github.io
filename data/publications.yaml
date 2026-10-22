@@ -1,0 +1,173 @@
+# Peer-reviewed and other scholarly work. `first: true` marks first-author work.
+# tags: rna | heart | ai | eng   (used for the filter chips on /publications/)
+pending:
+  - title: "Unified multi-foundation-model slide representation for pan-cancer recognition and text-guided tumor localization (ASTRA)"
+    authors: "Wang T, Su Z, Akbar AR, Sajjad U, Gokhale L, Rabolli CP, Chen W, Parwani A, Niazi MKK"
+    venue: "Nature Communications"
+    status: "Under review"
+    tags: [ai]
+  - title: "Dino-NestedUNet: unlocking foundation vision encoders for pathology tumor bulk segmentation via dense decoding"
+    authors: "Wang T, Su Z, Akbar AR, Sajjad U, Afzaal U, Gokhale L, Rabolli CP, Chen W, Parwani A, Niazi MKK"
+    venue: ""
+    status: "In preparation"
+    tags: [ai]
+
+reports:
+  - title: "Vision for a Unified Epitranscriptomics Consortium (EpiC)"
+    authors: "Chiu NHL, Fu D, Maligireddy SS, Rabolli CP, Tsotakos N, Vilseck JZ"
+    venue: "In: Charting a Future for Sequencing RNA and Its Modifications: A New Era for Biology and Medicine. National Academies of Sciences, Engineering, and Medicine"
+    year: 2024
+    doi: "10.17226/27165"
+    note: "Commissioned paper selected from the NASEM Ideation Challenge · equal contribution"
+    tags: [rna]
+
+published:
+  - year: 2025
+    title: "AIMP3 maintains cardiac homeostasis by regulating the editing activity of methionyl-tRNA synthetase"
+    authors: "Das AS, Rabolli CP, Martens CR, Jiang HK, Zhang Y, Zimmer AA, Lin K, Baskin KK, Alfonzo JD, Accornero F"
+    venue: "Nature Cardiovascular Research"
+    cite: "4(7):876–890"
+    doi: "10.1038/s44161-025-00670-w"
+    pmid: "40562875"
+    tags: [rna, heart]
+  - year: 2025
+    title: "The cardiac METTL3/m6A pathway regulates the systemic response to Western diet"
+    authors: "Rabolli CP, Longenecker JZ, Naarmann-de Vries IS, Serrano J, Petrosino JM, Kyriazis GA, Dieterich C, Accornero F"
+    venue: "JCI Insight"
+    cite: "10(11):e188414"
+    doi: "10.1172/jci.insight.188414"
+    pmid: "40272887"
+    first: true
+    tags: [rna, heart]
+  - year: 2025
+    title: "The m6A-binding protein YTHDF3 modulates the cardiac response to stress"
+    authors: "Rabolli CP, Das AS, Golubeva VA, van Berlo JH, Accornero F"
+    venue: "RNA"
+    cite: "31(7):923–932"
+    doi: "10.1261/rna.080442.125"
+    pmid: "40216557"
+    first: true
+    note: "Subject of an invited commentary in RNA (Costantino & Paneni, 2025)"
+    tags: [rna, heart]
+  - year: 2024
+    title: "CITED4 gene therapy protects against maladaptive cardiac remodeling after ischemia/reperfusion injury in mice"
+    authors: "Lerchenmüller C, Hastings MH, Rabolli CP, Betge F, Roshan M, Liu LX, Liu X, Heß C, Roh JD, Platt C, Bezzerides V, Busch M, Katus HA, Frey N, Most P, Rosenzweig A"
+    venue: "Molecular Therapy"
+    cite: "32(10):3683–3694"
+    doi: "10.1016/j.ymthe.2024.07.018"
+    pmid: "39066479"
+    tags: [heart]
+  - year: 2024
+    title: "YTHDF1 is pivotal for maintenance of cardiac homeostasis"
+    authors: "Golubeva VA, Das AS, Rabolli CP, et al."
+    venue: "Journal of Molecular and Cellular Cardiology"
+    cite: "193:25–35"
+    doi: "10.1016/j.yjmcc.2024.05.008"
+    pmid: "38768805"
+    tags: [rna, heart]
+  - year: 2024
+    title: "Nanopore detection of METTL3-dependent m6A-modified mRNA reveals a new mechanism regulating cardiomyocyte mitochondrial metabolism"
+    authors: "Rabolli CP, Naarmann-de Vries IS, Makarewich CA, et al."
+    venue: "Circulation"
+    cite: "149(16):1319–1322"
+    doi: "10.1161/CIRCULATIONAHA.123.066473"
+    pmid: "38620081"
+    first: true
+    tags: [rna, heart]
+  - year: 2024
+    title: "YTHDF2 governs muscle size through a targeted modulation of proteostasis"
+    authors: "Gilbert CJ, Rabolli CP, Golubeva VA, et al."
+    venue: "Nature Communications"
+    cite: "15(1):2176"
+    doi: "10.1038/s41467-024-46546-8"
+    pmid: "38467649"
+    tags: [rna]
+  - year: 2024
+    title: "Cardiac cryptographers: cracking the code of the epitranscriptome"
+    authors: "Rabolli CP, Accornero F"
+    venue: "European Heart Journal"
+    cite: "45(23):2034–2036"
+    doi: "10.1093/eurheartj/ehae057"
+    pmid: "38339963"
+    first: true
+    tags: [rna, heart]
+  - year: 2024
+    title: "In vitro inflammatory multi-cellular model of osteoarthritis"
+    authors: "Marrero-Berrios I, Salter SE, Hirday R, Rabolli CP, et al."
+    venue: "Osteoarthritis and Cartilage Open"
+    cite: "6(1):100432"
+    doi: "10.1016/j.ocarto.2023.100432"
+    pmid: "38288345"
+    tags: [eng]
+  - year: 2023
+    title: "Loss of YTHDF2 alters the expression of m6A-modified Myzap and causes adverse cardiac remodeling"
+    authors: "Golubeva VA, Dorn LE, Gilbert CJ, Rabolli CP, et al."
+    venue: "JACC: Basic to Translational Science"
+    cite: "8(9):1180–1194"
+    doi: "10.1016/j.jacbts.2023.03.012"
+    pmid: "37791304"
+    tags: [rna, heart]
+  - year: 2022
+    title: "m6A RNA methylation: a dynamic regulator of cardiac muscle and extracellular matrix"
+    authors: "Rabolli CP, Accornero F"
+    venue: "Current Opinion in Physiology"
+    cite: "28:100561"
+    doi: "10.1016/j.cophys.2022.100561"
+    pmid: "37304645"
+    first: true
+    tags: [rna, heart]
+  - year: 2022
+    title: "Mineralocorticoid receptor antagonists and glucocorticoids differentially affect skeletal muscle inflammation and pathology in muscular dystrophy"
+    authors: "Howard ZM, Gomatam CK, Rabolli CP, et al."
+    venue: "JCI Insight"
+    cite: "7(19):e159875"
+    doi: "10.1172/jci.insight.159875"
+    pmid: "36040807"
+    tags: []
+  - year: 2022
+    title: "Restoration of cardiomyogenesis in aged mouse hearts by voluntary exercise"
+    authors: "Lerchenmüller C, Vujic A, Mittag S, Wang A, Rabolli CP, et al."
+    venue: "Circulation"
+    cite: "146(5):412–426"
+    doi: "10.1161/CIRCULATIONAHA.121.057276"
+    pmid: "35862076"
+    tags: [heart]
+  - year: 2020
+    title: "Multi-layer stackable tissue culture platform for 3D co-culture"
+    authors: "Marrero-Berrios I, Shrirao A, Rabolli CP, Hirday R, Schloss RS, Yarmush ML"
+    venue: "Technology"
+    cite: "8(01n02):37–49"
+    doi: "10.1142/S233954782050003X"
+    tags: [eng]
+  - year: 2020
+    title: "CITED4 protects against adverse remodeling in response to physiological and pathological stress"
+    authors: "Lerchenmüller C, Rabolli CP, Yeri A, et al."
+    venue: "Circulation Research"
+    cite: "127(5):631–646"
+    doi: "10.1161/CIRCRESAHA.119.315881"
+    pmid: "32418505"
+    tags: [heart]
+  - year: 2019
+    title: "Alginate encapsulation for bupivacaine delivery and mesenchymal stromal cell immunomodulatory cotherapy"
+    authors: "Davis MS, Marrero-Berrios I, Perez I, Rabolli CP, et al."
+    venue: "Journal of Inflammation Research"
+    cite: "12:87–97"
+    doi: "10.2147/JIR.S192749"
+    pmid: "30881083"
+    tags: [eng]
+  - year: 2018
+    title: "Exercise induces new cardiomyocyte generation in the adult mammalian heart"
+    authors: "Vujic A, Lerchenmüller C, Wu TD, Guillermier C, Rabolli CP, et al."
+    venue: "Nature Communications"
+    cite: "9(1):1659"
+    doi: "10.1038/s41467-018-04083-1"
+    pmid: "29695718"
+    tags: [heart]
+  - year: 2016
+    title: "Elastin-like polypeptides: a strategic fusion partner for biologics"
+    authors: "Yeboah A, Cohen RI, Rabolli C, Yarmush ML, Berthiaume F"
+    venue: "Biotechnology and Bioengineering"
+    cite: "113(8):1617–1627"
+    doi: "10.1002/bit.25998"
+    pmid: "27111242"
+    tags: [eng]

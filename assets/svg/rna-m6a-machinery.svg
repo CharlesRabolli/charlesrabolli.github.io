@@ -1,0 +1,83 @@
+<svg viewBox="0 0 760 452" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="mm-t">
+  <title id="mm-t">The m6A machinery. In the nucleus, the METTL3–METTL14 writer complex adds m6A to nascent RNA; FTO and ALKBH5 can remove it; YTHDC1 reads it. In the cytoplasm, YTHDF1, YTHDF2 and YTHDF3 and IGF2BP proteins read it and influence decay, translation and stability.</title>
+  <defs><marker id="mm-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="d-ink3"/></marker></defs>
+  <!-- compartments -->
+  <rect x="10" y="10" width="740" height="432" rx="18" class="d-sunk"/>
+  <rect x="24" y="24" width="330" height="404" rx="16" class="d-bg d-ink3-s" stroke-width="1.2" stroke-dasharray="6 5"/>
+  <text x="44" y="52" font-size="12" letter-spacing="1.5" class="t-mono d-ink3">NUCLEUS</text>
+  <text x="384" y="52" font-size="12" letter-spacing="1.5" class="t-mono d-ink3">CYTOPLASM</text>
+  <!-- nascent RNA -->
+  <path d="M60 230 C120 200 170 260 230 228 S320 220 336 230" class="d-ink3-s" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <g class="d-accent-s" stroke-width="2"><line x1="150" y1="226" x2="150" y2="206"/><line x1="262" y1="223" x2="262" y2="203"/></g>
+  <g class="d-accent"><circle cx="150" cy="202" r="6.5"/><circle cx="262" cy="199" r="6.5"/></g>
+  <text x="60" y="256" font-size="11.5" class="d-ink3">nascent pre-mRNA</text>
+  <!-- writers -->
+  <g>
+    <rect x="44" y="72" width="200" height="96" rx="12" class="d-s1" opacity="0.12"/>
+    <rect x="44" y="72" width="200" height="96" rx="12" fill="none" class="d-s1-s" stroke-width="1.5"/>
+    <text x="58" y="94" font-size="11.5" letter-spacing="1.2" class="t-mono d-ink2">WRITERS</text>
+    <circle cx="86" cy="128" r="24" class="d-s1"/><text x="86" y="132" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">METTL3</text>
+    <circle cx="136" cy="134" r="20" class="d-s1" opacity="0.7"/><text x="136" y="138" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">METTL14</text>
+    <circle cx="178" cy="124" r="15" class="d-s1" opacity="0.5"/><text x="178" y="128" text-anchor="middle" font-size="9.5" font-weight="700" class="d-ink">WTAP</text>
+    <text x="198" y="152" font-size="10" class="d-ink3">+ VIRMA,</text>
+    <text x="198" y="164" font-size="10" class="d-ink3">ZC3H13…</text>
+    <path d="M110 170 L145 196" class="d-ink3-s" stroke-width="1.5" marker-end="url(#mm-a)"/>
+  </g>
+  <!-- erasers -->
+  <g>
+    <rect x="200" y="290" width="140" height="68" rx="12" class="d-s4" opacity="0.14"/>
+    <rect x="200" y="290" width="140" height="68" rx="12" fill="none" class="d-s4-s" stroke-width="1.5"/>
+    <text x="214" y="311" font-size="11.5" letter-spacing="1.2" class="t-mono d-ink2">ERASERS</text>
+    <text x="214" y="333" font-size="13" font-weight="700" class="d-ink">FTO · ALKBH5</text>
+    <text x="214" y="349" font-size="10.5" class="d-ink3">FTO prefers cap m6Am</text>
+    <path d="M262 288 L262 216" class="d-ink3-s" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#mm-a)"/>
+  </g>
+  <!-- nuclear reader -->
+  <g>
+    <rect x="44" y="290" width="140" height="120" rx="12" class="d-s3" opacity="0.14"/>
+    <rect x="44" y="290" width="140" height="120" rx="12" fill="none" class="d-s3-s" stroke-width="1.5"/>
+    <text x="58" y="311" font-size="11.5" letter-spacing="1.2" class="t-mono d-ink2">NUCLEAR READER</text>
+    <text x="58" y="333" font-size="13" font-weight="700" class="d-ink">YTHDC1</text>
+    <text x="58" y="353" font-size="11" class="d-ink3">splicing choices,</text>
+    <text x="58" y="368" font-size="11" class="d-ink3">mRNA export,</text>
+    <text x="58" y="383" font-size="11" class="d-ink3">chromatin-associated</text>
+    <text x="58" y="398" font-size="11" class="d-ink3">RNAs</text>
+    <path d="M140 288 L150 216" class="d-ink3-s" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#mm-a)"/>
+  </g>
+  <!-- export arrow -->
+  <path d="M338 230 C360 230 372 222 396 214" class="d-ink3-s" stroke-width="2" fill="none" marker-end="url(#mm-a)"/>
+  <text x="364" y="252" font-size="11" class="d-ink3">export</text>
+  <!-- cytoplasmic mRNA -->
+  <path d="M404 210 C460 190 520 230 590 205 S700 200 728 210" class="d-ink3-s" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <g class="d-accent-s" stroke-width="2"><line x1="470" y1="207" x2="470" y2="186"/><line x1="610" y1="203" x2="610" y2="182"/></g>
+  <g class="d-accent"><circle cx="470" cy="182" r="6.5"/><circle cx="610" cy="178" r="6.5"/></g>
+  <!-- cytoplasmic readers -->
+  <g>
+    <rect x="384" y="72" width="350" height="88" rx="12" class="d-s2" opacity="0.1"/>
+    <rect x="384" y="72" width="350" height="88" rx="12" fill="none" class="d-s2-s" stroke-width="1.5"/>
+    <text x="398" y="94" font-size="11.5" letter-spacing="1.2" class="t-mono d-ink2">YTHDF READERS</text>
+    <text x="398" y="118" font-size="13" font-weight="700" class="d-ink">YTHDF1 · YTHDF2 · YTHDF3</text>
+    <text x="398" y="137" font-size="11" class="d-ink3">Bind the same m6A sites; collectively push toward decay.</text>
+    <text x="398" y="152" font-size="11" class="d-ink3">Context-specific roles in translation remain debated.</text>
+    <path d="M540 162 L520 196" class="d-ink3-s" stroke-width="1.5" marker-end="url(#mm-a)"/>
+  </g>
+  <g>
+    <rect x="384" y="290" width="166" height="68" rx="12" class="d-s3" opacity="0.14"/>
+    <rect x="384" y="290" width="166" height="68" rx="12" fill="none" class="d-s3-s" stroke-width="1.5"/>
+    <text x="398" y="311" font-size="11.5" letter-spacing="1.2" class="t-mono d-ink2">OTHER READERS</text>
+    <text x="398" y="333" font-size="13" font-weight="700" class="d-ink">IGF2BP1–3</text>
+    <text x="398" y="349" font-size="10.5" class="d-ink3">stabilize targets</text>
+    <path d="M466 288 L470 226" class="d-ink3-s" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#mm-a)"/>
+  </g>
+  <!-- outcomes -->
+  <g font-size="12">
+    <rect x="570" y="262" width="164" height="40" rx="10" class="d-bg d-rule-s"/>
+    <text x="584" y="287" class="d-ink"><tspan font-weight="700">Decay</tspan> via CCR4–NOT</text>
+    <rect x="570" y="310" width="164" height="40" rx="10" class="d-bg d-rule-s"/>
+    <text x="584" y="335" class="d-ink"><tspan font-weight="700">Translation</tspan> output</text>
+    <rect x="570" y="358" width="164" height="40" rx="10" class="d-bg d-rule-s"/>
+    <text x="584" y="383" class="d-ink"><tspan font-weight="700">Stability</tspan> and storage</text>
+    <path d="M640 222 L652 258" class="d-ink3-s" stroke-width="1.5" marker-end="url(#mm-a)"/>
+  </g>
+  <circle cx="400" cy="416" r="6" class="d-accent"/><text x="412" y="420" font-size="11.5" class="d-ink3">= m6A on adenosine, usually within a DRACH motif</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg viewBox="0 0 920 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="hm-t">
+  <title id="hm-t">Schematic of a cardiac mRNA: METTL3 writes m6A marks in the coding sequence and 3′ UTR, and YTHDF3 reads them.</title>
+  <defs>
+    <marker id="hm-arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="d-ink2"/></marker>
+  </defs>
+  <!-- backbone -->
+  <line x1="70" y1="112" x2="790" y2="112" class="d-ink3-s" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="70" cy="112" r="11" class="d-navy"/>
+  <text x="70" y="146" text-anchor="middle" class="t-mono d-ink3" font-size="12">5′ cap</text>
+  <rect x="190" y="96" width="320" height="32" rx="7" class="d-navy"/>
+  <text x="350" y="117" text-anchor="middle" class="t-mono d-bg" font-size="12" font-weight="500" letter-spacing="1.2">CODING SEQUENCE</text>
+  <text x="655" y="146" text-anchor="middle" class="t-mono d-ink3" font-size="12">3′ UTR</text>
+  <text x="800" y="117" class="t-mono d-ink" font-size="14" font-weight="500">AAAA</text>
+  <!-- m6A pins -->
+  <g class="d-accent-s" stroke-width="2.5">
+    <line x1="290" y1="96" x2="290" y2="70"/><line x1="440" y1="96" x2="440" y2="70"/>
+    <line x1="590" y1="112" x2="590" y2="70"/><line x1="715" y1="112" x2="715" y2="70"/>
+  </g>
+  <g class="d-accent"><circle cx="290" cy="66" r="8"/><circle cx="440" cy="66" r="8"/><circle cx="590" cy="66" r="8"/><circle cx="715" cy="66" r="8"/></g>
+  <!-- writer -->
+  <rect x="214" y="10" width="152" height="30" rx="15" class="d-bg d-ink-s" stroke-width="1.5"/>
+  <text x="290" y="30" text-anchor="middle" font-size="13.5" class="d-ink"><tspan font-weight="700">METTL3</tspan> · writer</text>
+  <line x1="290" y1="41" x2="290" y2="54" class="d-ink3-s" stroke-width="1.5" marker-end="url(#hm-arr)"/>
+  <text x="382" y="30" font-size="12.5" class="d-ink3">adds m<tspan baseline-shift="super" font-size="9">6</tspan>A to cardiac mRNA</text>
+  <!-- reader -->
+  <rect x="514" y="170" width="152" height="30" rx="15" class="d-bg d-ink-s" stroke-width="1.5"/>
+  <text x="590" y="190" text-anchor="middle" font-size="13.5" class="d-ink"><tspan font-weight="700">YTHDF3</tspan> · reader</text>
+  <line x1="590" y1="168" x2="590" y2="124" class="d-ink3-s" stroke-width="1.5" marker-end="url(#hm-arr)"/>
+  <text x="682" y="190" font-size="12.5" class="d-ink3">binds the mark</text>
+  <!-- numbered findings -->
+  <g font-size="12.5">
+    <circle cx="214" cy="160" r="10" class="d-accent"/><text x="214" y="164.5" text-anchor="middle" fill="#fff" font-weight="700" font-size="11.5">1</text>
+    <text x="231" y="164.5" class="d-ink2"><tspan font-weight="600" class="d-ink">Position matters</tspan>: CDS vs. 3′ UTR</text>
+    <circle cx="612" cy="25" r="10" class="d-accent"/><text x="612" y="29.5" text-anchor="middle" fill="#fff" font-weight="700" font-size="11.5">2</text>
+    <text x="629" y="29.5" class="d-ink2"><tspan font-weight="600" class="d-ink">Heart-to-fat signaling</tspan> via <tspan font-style="italic">FGF1</tspan></text>
+    <circle cx="790" cy="180" r="10" class="d-accent"/><text x="790" y="184.5" text-anchor="middle" fill="#fff" font-weight="700" font-size="11.5">3</text>
+    <text x="806" y="178" class="d-ink"><tspan font-weight="600">Stress-induced</tspan></text>
+    <text x="806" y="194" class="d-ink"><tspan font-weight="600">cardiac growth</tspan></text>
+  </g>
+  <circle cx="845" cy="62" r="6" class="d-accent"/><text x="857" y="66.5" font-size="12" class="d-ink3">= m<tspan baseline-shift="super" font-size="8.5">6</tspan>A</text>
+</svg>

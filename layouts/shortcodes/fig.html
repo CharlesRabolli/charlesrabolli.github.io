@@ -1,0 +1,17 @@
+{{- $class := .Get "class" -}}
+<figure class="fig {{ $class }}"{{ with .Get "id" }} id="{{ . }}"{{ end }}>
+  <div class="fig__media{{ if .Get "svg" }} fig__media--svg{{ end }}{{ if .Get "chart" }} fig__media--chart{{ end }}">
+  {{- with .Get "chart" -}}
+    {{- $data := resources.Get (printf "data/%s.json" .) -}}
+    {{- if not $data -}}{{ errorf "fig: missing chart data %s" . }}{{- end -}}
+    <div class="chart" data-chart="chart-{{ . }}"></div>
+    <script type="application/json" id="chart-{{ . }}">{{ $data.Content | safeJS }}</script>
+  {{- else with .Get "svg" -}}
+    {{- with resources.Get . -}}{{ .Content | safeHTML }}{{- else -}}{{ errorf "fig: missing svg asset %s" . }}{{- end -}}
+  {{- else -}}
+    {{- $src := .Get "src" -}}
+    <img src="{{ $src }}" alt="{{ .Get "alt" }}" loading="lazy" decoding="async"{{ with .Get "w" }} width="{{ . }}"{{ end }}{{ with .Get "h" }} height="{{ . }}"{{ end }}>
+  {{- end -}}
+  </div>
+  <figcaption><span class="fig__num"></span> {{ .Inner | .Page.RenderString }}{{ with .Get "credit" }} <span class="fig__credit">{{ . | markdownify }}</span>{{ end }}</figcaption>
+</figure>

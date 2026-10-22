@@ -1,0 +1,24 @@
+<svg viewBox="0 0 760 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="tp-t">
+  <title id="tp-t">Schematic metagene of m6A along mRNA: low in the 5′ UTR, rising through the coding sequence, peaking just after the stop codon and decaying through the 3′ UTR.</title>
+  <text x="20" y="24" font-size="15" font-weight="600" class="d-ink">Where m<tspan baseline-shift="super" font-size="10">6</tspan>A sits on a typical mRNA</text>
+  <text x="20" y="44" font-size="12.5" class="d-ink3">Schematic metagene: every transcript stretched onto one coordinate, m6A density averaged.</text>
+  <!-- axes -->
+  <line x1="60" y1="200" x2="740" y2="200" class="d-rule-s" stroke-width="1"/>
+  <text x="54" y="80" text-anchor="end" font-size="11" class="d-ink3">high</text>
+  <text x="54" y="198" text-anchor="end" font-size="11" class="d-ink3">low</text>
+  <text x="18" y="140" font-size="11" class="d-ink3" transform="rotate(-90 18 140)" text-anchor="middle">m6A density</text>
+  <!-- curve -->
+  <path d="M60 192 C110 190 140 188 170 186 C260 180 330 170 400 150 C440 138 455 92 478 76 C500 62 515 90 540 120 C580 160 650 176 740 184 L740 200 L60 200 Z" class="d-accent" opacity="0.12"/>
+  <path d="M60 192 C110 190 140 188 170 186 C260 180 330 170 400 150 C440 138 455 92 478 76 C500 62 515 90 540 120 C580 160 650 176 740 184" class="d-accent-s" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- stop codon -->
+  <line x1="470" y1="64" x2="470" y2="226" class="d-ink-s" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="476" y="62" font-size="12" font-weight="600" class="d-ink">stop codon</text>
+  <!-- gene model -->
+  <rect x="60" y="214" width="110" height="10" rx="3" class="d-ink3"/>
+  <rect x="170" y="210" width="300" height="18" rx="4" class="d-navy"/>
+  <rect x="470" y="214" width="270" height="10" rx="3" class="d-ink3"/>
+  <g font-size="12" class="d-ink3" text-anchor="middle"><text x="115" y="248">5′ UTR</text><text x="320" y="248">coding sequence</text><text x="605" y="248">3′ UTR</text></g>
+  <text x="76" y="92" font-size="11.5" class="d-ink2">Why the peak? Exon junction complexes shield sites</text>
+  <text x="76" y="107" font-size="11.5" class="d-ink2">near splice junctions, so marks survive mainly in long</text>
+  <text x="76" y="122" font-size="11.5" class="d-ink2">internal and final exons, where stop codons usually sit.</text>
+</svg>

@@ -1,0 +1,13 @@
+{
+  "type": "hbar",
+  "title": "What a cell's RNA is made of",
+  "subtitle": "Approximate share of total RNA mass in a typical mammalian cell (textbook ranges).",
+  "unit": "%", "max": 100, "ticks": [0, 25, 50, 75, 100], "tickFormat": "{}%", "labelWidth": 200,
+  "valueHead": "Share of total RNA",
+  "items": [
+    {"label": "Ribosomal RNA (rRNA)", "value": 80, "display": "~80%", "slot": 0, "em": true, "detail": "Roughly 80–85%. The ribosome's structural and catalytic core."},
+    {"label": "Transfer RNA (tRNA)", "value": 13, "display": "~10–15%", "slot": 0, "detail": "Roughly 10–15%. Small adaptors, densely chemically modified."},
+    {"label": "Messenger RNA (mRNA)", "value": 4, "display": "~3–5%", "slot": 1, "em": true, "detail": "Roughly 3–5%. The protein-coding message, and the main subject of this page."},
+    {"label": "Other small and long ncRNAs", "value": 2, "display": "~1–2%", "slot": 0, "detail": "snRNAs, snoRNAs, microRNAs, lncRNAs and more. Small by mass, large in variety."}
+  ]
+}

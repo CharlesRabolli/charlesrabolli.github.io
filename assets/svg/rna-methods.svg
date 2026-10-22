@@ -1,0 +1,70 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="me-t">
+  <title id="me-t">Four ways to detect m6A, compared by resolution, whether they report the fraction of molecules modified, whether they read single molecules, and whether they need an antibody.</title>
+  <g font-size="12">
+    <!-- column headers -->
+    <g>
+      <rect x="150" y="12" width="146" height="104" rx="12" class="d-bg d-rule-s"/>
+      <text x="164" y="36" font-size="13.5" font-weight="700" class="d-ink">MeRIP-seq</text>
+      <text x="164" y="52" class="t-mono d-ink3" font-size="11">2012</text>
+      <text x="164" y="74" class="d-ink2">antibody pulls down</text>
+      <text x="164" y="90" class="d-ink2">methylated fragments,</text>
+      <text x="164" y="106" class="d-ink2">then short-read seq</text>
+    </g>
+    <g>
+      <rect x="304" y="12" width="146" height="104" rx="12" class="d-bg d-rule-s"/>
+      <text x="318" y="36" font-size="13.5" font-weight="700" class="d-ink">miCLIP</text>
+      <text x="318" y="52" class="t-mono d-ink3" font-size="11">2015</text>
+      <text x="318" y="74" class="d-ink2">UV-crosslinked antibody</text>
+      <text x="318" y="90" class="d-ink2">leaves a mutation at</text>
+      <text x="318" y="106" class="d-ink2">the modified base</text>
+    </g>
+    <g>
+      <rect x="458" y="12" width="146" height="104" rx="12" class="d-bg d-rule-s"/>
+      <text x="472" y="36" font-size="13.5" font-weight="700" class="d-ink">GLORI</text>
+      <text x="472" y="52" class="t-mono d-ink3" font-size="11">2022</text>
+      <text x="472" y="74" class="d-ink2">chemistry turns every</text>
+      <text x="472" y="90" class="d-ink2">unmethylated A into I;</text>
+      <text x="472" y="106" class="d-ink2">m6A stays A</text>
+    </g>
+    <g>
+      <rect x="612" y="12" width="140" height="104" rx="12" class="d-accent-soft d-accent-s" stroke-width="1.5"/>
+      <text x="626" y="36" font-size="13.5" font-weight="700" class="d-ink">Nanopore</text>
+      <text x="626" y="52" class="t-mono d-ink3" font-size="11">direct RNA, 2018–</text>
+      <text x="626" y="74" class="d-ink2">native RNA threads</text>
+      <text x="626" y="90" class="d-ink2">a pore; m6A shifts</text>
+      <text x="626" y="106" class="d-ink2">the ionic current</text>
+    </g>
+    <!-- rows -->
+    <g class="d-ink2" font-weight="600">
+      <text x="10" y="152">Resolution</text>
+      <text x="10" y="192">Fraction modified</text>
+      <text x="10" y="232">Single molecules</text>
+      <text x="10" y="272">Antibody-free</text>
+      <text x="10" y="312">Full-length isoforms</text>
+    </g>
+    <g class="d-rule-s" stroke-width="1"><line x1="10" y1="166" x2="752" y2="166"/><line x1="10" y1="206" x2="752" y2="206"/><line x1="10" y1="246" x2="752" y2="246"/><line x1="10" y1="286" x2="752" y2="286"/><line x1="10" y1="326" x2="752" y2="326"/></g>
+    <g class="d-ink">
+      <text x="164" y="152">~100–200 nt peaks</text><text x="318" y="152">single nucleotide</text><text x="472" y="152">single nucleotide</text><text x="626" y="152">single nucleotide*</text>
+    </g>
+    <!-- marks: filled = yes, ring = partial, dash = no -->
+    <g>
+      <line x1="164" y1="188" x2="176" y2="188" class="d-ink3-s" stroke-width="2"/><circle cx="324" cy="188" r="6" fill="none" class="d-ink3-s" stroke-width="2"/><circle cx="478" cy="188" r="6" class="d-s3"/><circle cx="632" cy="188" r="6" class="d-s3"/>
+      <line x1="164" y1="228" x2="176" y2="228" class="d-ink3-s" stroke-width="2"/><line x1="318" y1="228" x2="330" y2="228" class="d-ink3-s" stroke-width="2"/><line x1="472" y1="228" x2="484" y2="228" class="d-ink3-s" stroke-width="2"/><circle cx="632" cy="228" r="6" class="d-s3"/>
+      <line x1="164" y1="268" x2="176" y2="268" class="d-ink3-s" stroke-width="2"/><line x1="318" y1="268" x2="330" y2="268" class="d-ink3-s" stroke-width="2"/><circle cx="478" cy="268" r="6" class="d-s3"/><circle cx="632" cy="268" r="6" class="d-s3"/>
+      <line x1="164" y1="308" x2="176" y2="308" class="d-ink3-s" stroke-width="2"/><line x1="318" y1="308" x2="330" y2="308" class="d-ink3-s" stroke-width="2"/><line x1="472" y1="308" x2="484" y2="308" class="d-ink3-s" stroke-width="2"/><circle cx="632" cy="308" r="6" class="d-s3"/>
+    </g>
+    <g font-size="11.5" class="d-ink3">
+      <text x="342" y="192">relative</text><text x="494" y="192">absolute</text><text x="648" y="192">per read</text>
+    </g>
+    <!-- squiggle -->
+    <text x="10" y="356" font-size="12" font-weight="600" class="d-ink2">What a nanopore “hears”</text>
+    <text x="10" y="372" font-size="11" class="d-ink3">Schematic current traces</text>
+    <text x="10" y="386" font-size="11" class="d-ink3">for the same 5-mer, GGACU.</text>
+    <polyline points="164,380 190,380 190,366 222,366 222,384 252,384 252,360 290,360 290,376 330,376 330,370 366,370" fill="none" class="d-s1-s" stroke-width="2"/>
+    <polyline points="366,370 400,370 400,382 440,382 440,352 480,352 480,378 520,378 520,364 560,364" fill="none" class="d-s1-s" stroke-width="2"/>
+    <polyline points="366,370 400,370 400,382 440,382 440,340 480,340 480,384 520,384 520,364 560,364" fill="none" class="d-accent-s" stroke-width="2" stroke-dasharray="5 3"/>
+    <text x="570" y="356" font-size="11.5" class="d-ink2"><tspan class="d-s1" font-weight="700">—</tspan> unmodified A</text>
+    <text x="570" y="374" font-size="11.5" class="d-ink2"><tspan class="d-accent" font-weight="700">- -</tspan> m6A: the level shifts</text>
+    <text x="10" y="412" font-size="11" class="d-ink3">* Nanopore calls are model-based: accuracy depends on the training data and differs by sequence context.</text>
+  </g>
+</svg>

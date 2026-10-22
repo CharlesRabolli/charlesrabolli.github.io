@@ -1,0 +1,58 @@
+{
+ "type": "hbar",
+ "title": "CAMELYON16: finding metastases in lymph nodes",
+ "subtitle": "Slide-level AUC on the same 129-slide test set. Whiskers show 95% CIs or ranges, as reported.",
+ "min": 0.5,
+ "max": 1.0,
+ "ticks": [
+  0.5,
+  0.6,
+  0.7,
+  0.8,
+  0.9,
+  1.0
+ ],
+ "labelWidth": 250,
+ "valueHead": "AUC",
+ "items": [
+  {
+   "label": "Best algorithm",
+   "value": 0.994,
+   "lo": 0.983,
+   "hi": 0.999,
+   "display": "0.994",
+   "slot": 1,
+   "em": true,
+   "detail": "AUC 0.994 (95% CI 0.983–0.999)."
+  },
+  {
+   "label": "Top-5 algorithms (mean)",
+   "value": 0.96,
+   "lo": 0.923,
+   "hi": 0.994,
+   "display": "0.960",
+   "slot": 1,
+   "detail": "Mean AUC 0.960 (range 0.923–0.994)."
+  },
+  {
+   "label": "Pathologist, no time limit",
+   "value": 0.966,
+   "lo": 0.927,
+   "hi": 0.998,
+   "display": "0.966",
+   "slot": 0,
+   "detail": "One pathologist reading without time constraint: AUC 0.966 (95% CI 0.927–0.998)."
+  },
+  {
+   "label": "11 pathologists, 2-hour session (mean)",
+   "value": 0.81,
+   "lo": 0.738,
+   "hi": 0.884,
+   "display": "0.810",
+   "slot": 0,
+   "em": true,
+   "detail": "Mean AUC 0.810 (range 0.738–0.884) in a simulated routine-workflow setting."
+  }
+ ],
+ "marks": "dot"
+}

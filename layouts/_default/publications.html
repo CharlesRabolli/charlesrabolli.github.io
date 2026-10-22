@@ -1,0 +1,72 @@
+{{ define "main" }}
+{{ $me := `(Rabolli CP|Rabolli C)(,|$)` }}
+<div class="wrap wrap--mid">
+  <header class="page-head">
+    <h1>Publications</h1>
+    <p class="dek">{{ len site.Data.publications.published }} peer-reviewed papers spanning RNA biology, cardiovascular science, bioengineering, and now computational pathology. For the live list, see <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Rabolli+CP%5BAuthor%5D&sort=date">PubMed</a> or <a href="https://scholar.google.com/citations?user=wHrq7FMAAAAJ&hl=en">Google Scholar</a>.</p>
+  </header>
+
+  <div class="chips" role="group" aria-label="Filter publications">
+    <button type="button" class="chip" aria-pressed="true" data-filter="all">all</button>
+    <button type="button" class="chip" aria-pressed="false" data-filter="first">first author</button>
+    <button type="button" class="chip" aria-pressed="false" data-filter="rna">rna &amp; epitranscriptome</button>
+    <button type="button" class="chip" aria-pressed="false" data-filter="heart">cardiovascular</button>
+    <button type="button" class="chip" aria-pressed="false" data-filter="ai">ai &amp; pathology</button>
+    <button type="button" class="chip" aria-pressed="false" data-filter="eng">bioengineering</button>
+  </div>
+
+  <section class="pubs-group">
+    <h2 class="section__label">In progress</h2>
+    <ol class="pubs">
+      {{ range site.Data.publications.pending }}
+      <li class="pub" data-tags="{{ delimit .tags " " }}">
+        <p class="pub__title">{{ .title }}</p>
+        <p class="pub__authors">{{ replaceRE $me `<strong>$1</strong>$2` .authors | safeHTML }}</p>
+        <p class="pub__venue">{{ with .venue }}<em>{{ . }}</em> · {{ end }}<span class="pub__status">{{ .status }}</span></p>
+      </li>
+      {{ end }}
+    </ol>
+  </section>
+
+  <section class="pubs-group">
+    <h2 class="section__label">National Academies report</h2>
+    <ol class="pubs">
+      {{ range site.Data.publications.reports }}
+      <li class="pub" data-tags="{{ delimit .tags " " }}">
+        <p class="pub__title">{{ .title }}</p>
+        <p class="pub__authors">{{ replaceRE $me `<strong>$1</strong>$2` .authors | safeHTML }}</p>
+        <p class="pub__venue">{{ .venue }} ({{ .year }}).</p>
+        <p class="pub__note">{{ .note }}</p>
+        <p class="pub__links"><a href="https://doi.org/{{ .doi }}">doi</a></p>
+      </li>
+      {{ end }}
+    </ol>
+  </section>
+
+  {{ $years := slice }}
+  {{ range site.Data.publications.published }}{{ $years = $years | append .year }}{{ end }}
+  {{ $years = sort (uniq $years) "value" "desc" }}
+  <section class="pubs-group">
+    <h2 class="section__label">Peer-reviewed</h2>
+    {{ range $years }}
+      {{ with where site.Data.publications.published "year" . }}
+      <div class="pubs-year">
+        <h3 class="pubs-year__label">{{ (index . 0).year }}</h3>
+        <ol class="pubs">
+          {{ range . }}
+          <li class="pub{{ if .first }} pub--first{{ end }}" data-tags="{{ delimit .tags " " }}{{ if .first }} first{{ end }}">
+            <p class="pub__title">{{ .title | replaceRE `m6A` `m<sup>6</sup>A` | safeHTML }}</p>
+            <p class="pub__authors">{{ replaceRE $me `<strong>$1</strong>$2` .authors | safeHTML }}</p>
+            <p class="pub__venue"><em>{{ .venue }}</em> {{ .cite }}{{ if .first }} <span class="tag">first author</span>{{ end }}</p>
+            {{ with .note }}<p class="pub__note">{{ . }}</p>{{ end }}
+            <p class="pub__links"><a href="https://doi.org/{{ .doi }}">doi</a>{{ with .pmid }}<a href="https://pubmed.ncbi.nlm.nih.gov/{{ . }}/">pubmed</a>{{ end }}</p>
+          </li>
+          {{ end }}
+        </ol>
+      </div>
+      {{ end }}
+    {{ end }}
+  </section>
+  <p class="pubs-empty" hidden>Nothing in this category yet.</p>
+</div>
+{{ end }}

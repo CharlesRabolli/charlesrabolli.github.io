@@ -1,0 +1,39 @@
+<div class="widget" id="gigapixel">
+  <div class="widget__head">
+    <p class="widget__kicker">Try it</p>
+    <p class="widget__title">How big is one slide, really?</p>
+  </div>
+  <div class="widget__body">
+    <div class="gp-grid">
+      <div>
+        <label for="gp-w">Tissue width: <b data-o="w"></b> mm</label>
+        <input type="range" id="gp-w" min="2" max="40" step="1" value="15">
+        <label for="gp-h">Tissue height: <b data-o="h"></b> mm</label>
+        <input type="range" id="gp-h" min="2" max="25" step="1" value="12">
+        <div class="widget__row" role="group" aria-label="Scan magnification">
+          <span class="gp-lab">scan</span>
+          <button type="button" data-mag="0.5" aria-pressed="false">20× · 0.5 µm/px</button>
+          <button type="button" data-mag="0.25" aria-pressed="true">40× · 0.25 µm/px</button>
+        </div>
+        <div class="widget__row" role="group" aria-label="Tile size">
+          <span class="gp-lab">tile</span>
+          <button type="button" data-tile="224" aria-pressed="false">224 px</button>
+          <button type="button" data-tile="256" aria-pressed="true">256 px</button>
+          <button type="button" data-tile="512" aria-pressed="false">512 px</button>
+        </div>
+        <div class="widget__row">
+          <span class="gp-lab">view</span>
+          <button type="button" data-heat aria-pressed="false">show attention heatmap</button>
+        </div>
+      </div>
+      <canvas width="560" height="360" aria-label="Schematic of the tissue section with the tile grid overlaid"></canvas>
+    </div>
+    <div class="widget__stats">
+      <div class="widget__stat"><b data-k="px">0</b><span>pixels across × down</span></div>
+      <div class="widget__stat"><b data-k="gp">0</b><span>gigapixels</span></div>
+      <div class="widget__stat"><b data-k="tiles">0</b><span>tissue tiles</span></div>
+      <div class="widget__stat"><b data-k="gb">0</b><span>GB uncompressed (RGB)</span></div>
+    </div>
+    <p class="widget__note">Pixels = tissue size ÷ microns per pixel. Tiles assume about 70% of the bounding box is tissue after background removal. Scanned files are compressed (often roughly 1–3 GB at 40×), but models still have to process every tile. The heatmap is illustrative: it shows how attention-based models (Part V) concentrate on a small fraction of tiles.</p>
+  </div>
+</div>

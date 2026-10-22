@@ -1,0 +1,48 @@
+<svg viewBox="0 0 760 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="an-t">
+  <title id="an-t">Anatomy of a mature mRNA: 5′ cap, 5′ untranslated region, start codon, coding sequence, stop codon, 3′ untranslated region and poly(A) tail, with the regulators that act on each part.</title>
+  <!-- molecule -->
+  <line x1="60" y1="128" x2="640" y2="128" class="d-ink3-s" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="60" cy="128" r="12" class="d-navy"/>
+  <text x="60" y="132.5" text-anchor="middle" font-size="9.5" font-weight="700" class="d-bg">m7G</text>
+  <rect x="150" y="112" width="270" height="32" rx="6" class="d-navy"/>
+  <text x="285" y="133" text-anchor="middle" font-size="12" letter-spacing="1.2" class="t-mono d-bg">CODING SEQUENCE</text>
+  <text x="652" y="133" font-size="14" font-weight="600" class="t-mono d-ink">AAAAAAA</text>
+  <g class="d-ink3"><ellipse cx="670" cy="150" rx="14" ry="7"/><ellipse cx="700" cy="150" rx="14" ry="7"/><ellipse cx="730" cy="150" rx="14" ry="7"/></g>
+  <!-- codon ticks -->
+  <line x1="150" y1="104" x2="150" y2="152" class="d-s3-s" stroke-width="2.5"/>
+  <line x1="420" y1="104" x2="420" y2="152" class="d-s2-s" stroke-width="2.5"/>
+  <text x="150" y="168" text-anchor="middle" font-size="11.5" font-weight="600" class="t-mono d-ink2">AUG</text>
+  <text x="420" y="168" text-anchor="middle" font-size="11.5" font-weight="600" class="t-mono d-ink2">UGA</text>
+  <!-- m6A cluster near stop -->
+  <g class="d-accent-s" stroke-width="2"><line x1="398" y1="112" x2="398" y2="92"/><line x1="440" y1="128" x2="440" y2="92"/><line x1="470" y1="128" x2="470" y2="92"/></g>
+  <g class="d-accent"><circle cx="398" cy="88" r="6"/><circle cx="440" cy="88" r="6"/><circle cx="470" cy="88" r="6"/></g>
+  <!-- miRNA site -->
+  <rect x="540" y="118" width="40" height="20" rx="4" class="d-gold-soft d-gold-s" stroke-width="1.5"/>
+  <path d="M528 104 C545 98 575 98 592 104" class="d-gold-s" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- region labels -->
+  <g font-size="12" class="d-ink3" text-anchor="middle">
+    <text x="105" y="190">5′ UTR</text><text x="285" y="190">CDS</text><text x="535" y="190">3′ UTR</text><text x="695" y="190">poly(A) + PABP</text>
+  </g>
+  <line x1="74" y1="198" x2="146" y2="198" class="d-rule-s" stroke-width="1"/>
+  <line x1="154" y1="198" x2="416" y2="198" class="d-rule-s" stroke-width="1"/>
+  <line x1="424" y1="198" x2="640" y2="198" class="d-rule-s" stroke-width="1"/>
+  <!-- callouts -->
+  <g font-size="12">
+    <text x="14" y="34" font-weight="600" class="d-ink">Cap</text>
+    <text x="14" y="50" class="d-ink3">eIF4E binds here and</text>
+    <text x="14" y="66" class="d-ink3">recruits the ribosome</text>
+    <line x1="60" y1="74" x2="60" y2="112" class="d-rule-s" stroke-width="1"/>
+    <text x="280" y="34" font-weight="600" class="d-ink">m<tspan baseline-shift="super" font-size="9">6</tspan>A marks</text>
+    <text x="280" y="50" class="d-ink3">cluster around the stop codon</text>
+    <text x="280" y="66" class="d-ink3">and in long final exons</text>
+    <line x1="392" y1="56" x2="396" y2="80" class="d-rule-s" stroke-width="1"/>
+    <text x="520" y="34" font-weight="600" class="d-ink">microRNA sites</text>
+    <text x="520" y="50" class="d-ink3">mostly in the 3′ UTR; pairing</text>
+    <text x="520" y="66" class="d-ink3">represses and destabilizes</text>
+    <line x1="560" y1="74" x2="560" y2="96" class="d-rule-s" stroke-width="1"/>
+  </g>
+  <g font-size="11.5" class="d-ink3">
+    <text x="14" y="226">Tail-bound PABP contacts the cap complex, looping the message so ribosomes can recycle.</text>
+    <text x="14" y="242">Shortening the poly(A) tail is usually the first step of decay.</text>
+  </g>
+</svg>

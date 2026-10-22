@@ -1,0 +1,81 @@
+<svg viewBox="0 0 760 372" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="dg-t">
+  <title id="dg-t">The central dogma, revised. DNA is transcribed to RNA and RNA is translated to protein, but RNA can also be reverse-transcribed, replicated, and acts as a catalyst, regulator, guide, carrier of chemical marks, and medicine.</title>
+  <defs>
+    <marker id="dg-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="d-ink2"/></marker>
+    <marker id="dg-ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="d-accent"/></marker>
+  </defs>
+  <!-- nodes -->
+  <g>
+    <rect x="40" y="96" width="150" height="76" rx="14" class="d-bg d-ink-s" stroke-width="1.5"/>
+    <text x="115" y="132" text-anchor="middle" font-size="24" font-weight="700" class="d-ink">DNA</text>
+    <text x="115" y="155" text-anchor="middle" font-size="12" class="d-ink3">the archive</text>
+    <rect x="300" y="84" width="160" height="100" rx="16" class="d-accent-soft d-accent-s" stroke-width="2.5"/>
+    <text x="380" y="128" text-anchor="middle" font-size="28" font-weight="700" class="d-ink">RNA</text>
+    <text x="380" y="152" text-anchor="middle" font-size="12" class="d-ink2">the working copy</text>
+    <text x="380" y="168" text-anchor="middle" font-size="12" class="d-ink2">and much more</text>
+    <rect x="570" y="96" width="150" height="76" rx="14" class="d-bg d-ink-s" stroke-width="1.5"/>
+    <text x="645" y="132" text-anchor="middle" font-size="24" font-weight="700" class="d-ink">Protein</text>
+    <text x="645" y="155" text-anchor="middle" font-size="12" class="d-ink3">the machinery</text>
+  </g>
+  <!-- classic arrows -->
+  <path d="M194 122 H294" class="d-ink3-s" stroke-width="2" fill="none" marker-end="url(#dg-a)"/>
+  <text x="244" y="113" text-anchor="middle" font-size="12" font-weight="600" class="d-ink2">transcription</text>
+  <path d="M464 122 H564" class="d-ink3-s" stroke-width="2" fill="none" marker-end="url(#dg-a)"/>
+  <text x="514" y="113" text-anchor="middle" font-size="12" font-weight="600" class="d-ink2">translation</text>
+  <!-- reverse transcription -->
+  <path d="M296 156 H198" class="d-accent-s" stroke-width="2" stroke-dasharray="5 4" fill="none" marker-end="url(#dg-ar)"/>
+  <text x="247" y="202" text-anchor="middle" font-size="11.5" class="d-ink3">reverse transcription</text>
+  <text x="247" y="216" text-anchor="middle" font-size="11" class="t-mono d-ink3">1970</text>
+  <!-- DNA replication loop -->
+  <path d="M90 94 C70 50 160 50 140 94" class="d-ink3-s" stroke-width="1.6" fill="none" marker-end="url(#dg-a)"/>
+  <text x="115" y="44" text-anchor="middle" font-size="11.5" class="d-ink3">replication</text>
+  <!-- RNA replication loop -->
+  <path d="M352 82 C330 30 430 30 408 82" class="d-accent-s" stroke-width="1.6" stroke-dasharray="5 4" fill="none" marker-end="url(#dg-ar)"/>
+  <text x="380" y="30" text-anchor="middle" font-size="11.5" class="d-ink3">RNA replication (many viruses)</text>
+  <!-- roles -->
+  <g font-size="12">
+    <line x1="380" y1="186" x2="380" y2="222" class="d-accent-s" stroke-width="1.5"/>
+    <line x1="76" y1="222" x2="684" y2="222" class="d-accent-s" stroke-width="1.5"/>
+    <g>
+      <line x1="76" y1="222" x2="76" y2="240" class="d-accent-s" stroke-width="1.5"/>
+      <rect x="10" y="240" width="132" height="94" rx="10" class="d-bg d-rule-s" stroke-width="1"/>
+      <text x="76" y="262" text-anchor="middle" font-weight="700" class="d-ink">Catalyst</text>
+      <text x="76" y="282" text-anchor="middle" class="d-ink2">self-splicing introns,</text>
+      <text x="76" y="298" text-anchor="middle" class="d-ink2">RNase P,</text>
+      <text x="76" y="314" text-anchor="middle" class="d-ink2">the ribosome</text>
+    </g>
+    <g>
+      <line x1="228" y1="222" x2="228" y2="240" class="d-accent-s" stroke-width="1.5"/>
+      <rect x="162" y="240" width="132" height="94" rx="10" class="d-bg d-rule-s" stroke-width="1"/>
+      <text x="228" y="262" text-anchor="middle" font-weight="700" class="d-ink">Regulator</text>
+      <text x="228" y="282" text-anchor="middle" class="d-ink2">microRNAs,</text>
+      <text x="228" y="298" text-anchor="middle" class="d-ink2">siRNAs, lncRNAs</text>
+      <text x="228" y="314" text-anchor="middle" class="d-ink2">such as XIST</text>
+    </g>
+    <g>
+      <line x1="380" y1="222" x2="380" y2="240" class="d-accent-s" stroke-width="1.5"/>
+      <rect x="314" y="240" width="132" height="94" rx="10" class="d-accent-soft d-accent-s" stroke-width="1.5"/>
+      <text x="380" y="262" text-anchor="middle" font-weight="700" class="d-ink">Carrier of marks</text>
+      <text x="380" y="282" text-anchor="middle" class="d-ink2">m6A, pseudouridine,</text>
+      <text x="380" y="298" text-anchor="middle" class="d-ink2">m5C, inosine, and</text>
+      <text x="380" y="314" text-anchor="middle" class="d-ink2">150+ others</text>
+    </g>
+    <g>
+      <line x1="532" y1="222" x2="532" y2="240" class="d-accent-s" stroke-width="1.5"/>
+      <rect x="466" y="240" width="132" height="94" rx="10" class="d-bg d-rule-s" stroke-width="1"/>
+      <text x="532" y="262" text-anchor="middle" font-weight="700" class="d-ink">Guide</text>
+      <text x="532" y="282" text-anchor="middle" class="d-ink2">CRISPR guide RNAs,</text>
+      <text x="532" y="298" text-anchor="middle" class="d-ink2">snoRNAs that steer</text>
+      <text x="532" y="314" text-anchor="middle" class="d-ink2">modification enzymes</text>
+    </g>
+    <g>
+      <line x1="684" y1="222" x2="684" y2="240" class="d-accent-s" stroke-width="1.5"/>
+      <rect x="618" y="240" width="132" height="94" rx="10" class="d-bg d-rule-s" stroke-width="1"/>
+      <text x="684" y="262" text-anchor="middle" font-weight="700" class="d-ink">Medicine</text>
+      <text x="684" y="282" text-anchor="middle" class="d-ink2">antisense oligos,</text>
+      <text x="684" y="298" text-anchor="middle" class="d-ink2">siRNAs, mRNA</text>
+      <text x="684" y="314" text-anchor="middle" class="d-ink2">vaccines and editors</text>
+    </g>
+  </g>
+  <text x="380" y="362" text-anchor="middle" font-size="11.5" class="d-ink3">Dashed arrows: information flows that the 1958 statement of the dogma did not anticipate.</text>
+</svg>

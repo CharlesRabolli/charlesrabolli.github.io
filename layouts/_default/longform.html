@@ -1,0 +1,38 @@
+{{ define "bodyclass" }}page page--longform{{ end }}
+{{ define "main" }}
+{{ $toc := .TableOfContents | replaceRE `<nav id="TableOfContents">` `<nav>` | safeHTML }}
+<div class="longform">
+  <article class="longform__article">
+    <header class="longform__head">
+      {{ with .Params.eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.subtitle }}<p class="dek">{{ . | markdownify }}</p>{{ end }}
+      <div class="byline">
+        <img src="/img/charles-360.jpg" alt="" width="40" height="40" loading="lazy">
+        <div>
+          <a href="/">Charles P. Rabolli, PhD</a>
+          <span>Updated {{ .Lastmod.Format "January 2006" }} · {{ div (add .WordCount 500) 1000 }}k words · about {{ .ReadingTime }} min</span>
+        </div>
+      </div>
+    </header>
+    <details class="toc-mobile">
+      <summary>Contents</summary>
+      {{ $toc }}
+    </details>
+    <div class="prose">
+      {{ .Content }}
+    </div>
+    <footer class="longform__foot">
+      <p>Thanks for reading. Corrections, suggestions, and arguments are welcome at <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a>.</p>
+      <p class="longform__more">Also on this site:
+        {{ range where site.RegularPages "Layout" "longform" }}{{ if ne .Permalink $.Permalink }} <a href="{{ .RelPermalink }}">{{ .Title }} →</a>{{ end }}{{ end }}
+      </p>
+    </footer>
+  </article>
+  <aside class="toc" aria-label="On this page">
+    <p class="toc__label">On this page</p>
+    {{ $toc }}
+    <a class="toc__top" href="#main">Back to top ↑</a>
+  </aside>
+</div>
+{{ end }}

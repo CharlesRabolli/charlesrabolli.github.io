@@ -1,0 +1,115 @@
+{{ define "bodyclass" }}page page--home{{ end }}
+{{ define "main" }}
+<section class="hero wrap">
+  <div class="hero__photo">
+    <img src="/img/charles.jpg" alt="Portrait of Charles Rabolli" width="720" height="720">
+  </div>
+  <div class="hero__text">
+    <h1>Charles P. Rabolli</h1>
+    <p class="hero__role">md/phd candidate · rna biologist · computational pathology</p>
+    <div class="hero__bio">{{ .Content }}</div>
+    <p class="hero__meta">The Ohio State University · Columbus, Ohio</p>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="mailto:{{ site.Params.email }}">get in touch <span aria-hidden="true">↗</span></a>
+      <a class="btn" href="{{ site.Params.cv }}">download cv</a>
+      <a class="btn btn--ghost" href="/publications/">publications</a>
+    </div>
+  </div>
+</section>
+
+<section class="wrap section" aria-labelledby="deep-dives">
+  <div class="section__head">
+    <h2 class="section__label" id="deep-dives">Deep dives</h2>
+    <p class="section__note">Long-form, illustrated guides to the fields I work in. Written for curious scientists, clinicians, and engineers.</p>
+  </div>
+  <div class="dives">
+    {{ range (where site.RegularPages "Layout" "longform").ByWeight }}
+    <a class="dive" href="{{ .RelPermalink }}">
+      <div class="dive__art" aria-hidden="true">
+        {{ with .Params.card }}{{ with resources.Get . }}{{ .Content | safeHTML }}{{ end }}{{ end }}
+      </div>
+      <div class="dive__body">
+        {{ with .Params.eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Params.cardText }}</p>
+        <p class="dive__meta">{{ .Params.parts }} · {{ .ReadingTime }} min read · {{ len (findRE `class="fig ` .Content) }} figures · {{ len (findRE `class="video"` .Content) }} videos</p>
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</section>
+
+<section class="wrap section" aria-labelledby="research">
+  <div class="section__head">
+    <h2 class="section__label" id="research">Research</h2>
+  </div>
+  <p class="lede">My PhD asked how one chemical mark on messenger RNA, m<sup>6</sup>A, shapes the way the heart responds to stress, and how the heart uses it to signal to the rest of the body.</p>
+
+  <dl class="stats">
+    <div><dt>18</dt><dd>peer-reviewed publications</dd></div>
+    <div><dt>3</dt><dd>first-author research papers in <em>Circulation</em>, <em>JCI Insight</em>, and <em>RNA</em></dd></div>
+    <div><dt>F30</dt><dd>NIH individual fellowship from NHLBI (F30HL165812)</dd></div>
+    <div><dt>3</dt><dd>countries of research training: U.S., Italy, Germany</dd></div>
+  </dl>
+
+  <div class="system">
+    {{ with resources.Get "svg/home-mrna.svg" }}{{ .Content | safeHTML }}{{ end }}
+  </div>
+
+  <div class="findings">
+    <article class="finding">
+      <p class="finding__venue"><span class="num">1</span> <em>Circulation</em> · 2024 <span class="tag">first author</span></p>
+      <h3>Where the mark sits on an mRNA matters</h3>
+      <p>Nanopore direct RNA sequencing mapped METTL3-dependent m<sup>6</sup>A sites in adult cardiomyocytes. Whether the mark fell in the coding sequence or the 3′ UTR tracked with differences in protein output, and it pointed to targets in mitochondrial metabolism.</p>
+      <a href="https://doi.org/10.1161/CIRCULATIONAHA.123.066473">read the paper →</a>
+    </article>
+    <article class="finding">
+      <p class="finding__venue"><span class="num">2</span> <em>JCI Insight</em> · 2025 <span class="tag">first author</span></p>
+      <h3>The heart helps set whole-body metabolism</h3>
+      <p>On a Western diet, deleting METTL3 in cardiomyocytes protected mice from the diet's harmful effects, while raising it worsened weight gain, adiposity, and glucose intolerance. Cardiac m<sup>6</sup>A stabilizes <em>FGF1</em> mRNA, a heart-to-fat signal.</p>
+      <a href="https://doi.org/10.1172/jci.insight.188414">read the paper →</a>
+    </article>
+    <article class="finding">
+      <p class="finding__venue"><span class="num">3</span> <em>RNA</em> · 2025 <span class="tag">first author</span></p>
+      <h3>An m<sup>6</sup>A reader drives cardiac growth under stress</h3>
+      <p>Mice lacking YTHDF3 in cardiomyocytes showed less pathological remodeling after pressure overload. YTHDF3 controls stress-induced protein synthesis and cardiomyocyte size, which makes it a candidate cardioprotective target.</p>
+      <a href="https://doi.org/10.1261/rna.080442.125">read the paper →</a>
+    </article>
+  </div>
+  <p class="section__more"><a href="/publications/">all publications →</a></p>
+</section>
+
+<section class="wrap section grid-2" aria-label="Now and recent">
+  <div>
+    <h2 class="section__label">Now</h2>
+    <ul class="now">
+      <li><strong>Pathology and AI.</strong> Clinical training in pathology, including hematopathology at Ohio State and a visiting clerkship at Brigham and Women's and Mass General. In OSU's AI4Path lab I curate and annotate whole-slide images and contribute to foundation-model projects for tumor segmentation and pan-cancer slide representation.</li>
+      <li><strong>Translation.</strong> Building the biotech founder community with <a href="https://nucleate.org">Nucleate</a>: executive board of Nucleate Michigan, co-founding organizer of a new Ohio State chapter, and host of the 2026 Activator Demo Day in Columbus.</li>
+      <li><strong>Writing.</strong> Long-form guides to <a href="/rna-biology/">RNA biology</a> and <a href="/computational-pathology/">computational pathology</a>, updated as the fields move.</li>
+    </ul>
+  </div>
+  <div>
+    <h2 class="section__label">Recent</h2>
+    <ol class="news">
+      {{ range site.Data.news }}
+      <li><time>{{ .date }}</time><span>{{ .text | safeHTML }}</span></li>
+      {{ end }}
+    </ol>
+  </div>
+</section>
+
+<section class="wrap section" aria-labelledby="education">
+  <h2 class="section__label" id="education">Education</h2>
+  <ul class="edu">
+    {{ range site.Data.education.degrees }}
+    <li><span class="edu__mono" aria-hidden="true">{{ .mono }}</span><div><h3>{{ .school }}</h3><p>{{ .detail | safeHTML }}</p></div></li>
+    {{ end }}
+  </ul>
+  <h2 class="section__label section__label--sub">Research training abroad and beyond</h2>
+  <ul class="edu edu--compact">
+    {{ range site.Data.education.abroad }}
+    <li><span class="edu__mono" aria-hidden="true">{{ .mono }}</span><div><h3>{{ .school }}</h3><p>{{ .detail | safeHTML }}</p></div></li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}

@@ -1,0 +1,23 @@
+<div class="widget" id="drach">
+  <div class="widget__head">
+    <p class="widget__kicker">Try it</p>
+    <p class="widget__title">Find the m<sup>6</sup>A consensus motif</p>
+  </div>
+  <div class="widget__body">
+    <label for="drach-seq">RNA or DNA sequence (A, C, G, U/T; other characters are ignored)</label>
+    <textarea id="drach-seq" rows="4" spellcheck="false" autocomplete="off"></textarea>
+    <div class="widget__row">
+      <button type="button" data-act="example">random transcript</button>
+      <button type="button" data-act="shuffle">shuffle these letters</button>
+      <button type="button" data-act="ggac" aria-pressed="false">only GGACU</button>
+    </div>
+    <div class="drach-out" aria-live="polite"></div>
+    <div class="widget__stats">
+      <div class="widget__stat"><b data-k="len">0</b><span>nucleotides</span></div>
+      <div class="widget__stat"><b data-k="n">0</b><span>motif matches</span></div>
+      <div class="widget__stat"><b data-k="perkb">0</b><span>matches per kb</span></div>
+      <div class="widget__stat"><b data-k="exp">0</b><span>expected by chance</span></div>
+    </div>
+    <p class="widget__note">DRACH means D = A/G/U, R = A/G, then the methylated A, then C, then H = A/C/U. In random sequence of equal base composition about 1 position in 57 matches, so a 2 kb mRNA carries dozens of candidate sites. Only a small fraction of them are methylated in cells. The motif is necessary but nowhere near sufficient; position on the transcript, exon structure, and the writer complex's access decide the rest.</p>
+  </div>
+</div>

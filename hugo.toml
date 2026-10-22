@@ -1,0 +1,61 @@
+baseURL = 'https://charlesrabolli.com/'
+languageCode = 'en-us'
+title = 'Charles Rabolli'
+enableRobotsTXT = true
+disableKinds = ['taxonomy', 'term', 'RSS']
+summaryLength = 40
+
+[params]
+  author = 'Charles P. Rabolli'
+  description = 'Charles P. Rabolli, PhD — MD/PhD candidate at The Ohio State University working across RNA biology, cardiovascular science, and computational pathology.'
+  role = 'physician-scientist in training · rna biology · computational pathology'
+  email = 'charles.rabolli@osu.edu'
+  cv = '/uploads/Rabolli_CV.pdf'
+  image = '/img/charles.jpg'
+  location = 'Columbus, Ohio'
+
+  [[params.social]]
+    name = 'linkedin'
+    url = 'https://www.linkedin.com/in/charlesrabolli'
+  [[params.social]]
+    name = 'scholar'
+    url = 'https://scholar.google.com/citations?user=wHrq7FMAAAAJ&hl=en'
+  [[params.social]]
+    name = 'pubmed'
+    url = 'https://pubmed.ncbi.nlm.nih.gov/?term=Rabolli+CP%5BAuthor%5D&sort=date'
+  [[params.social]]
+    name = 'orcid'
+    url = 'https://orcid.org/0000-0002-4383-8706'
+  [[params.social]]
+    name = 'github'
+    url = 'https://github.com/CharlesRabolli'
+
+[menus]
+  [[menus.main]]
+    name = 'rna biology'
+    pageRef = '/rna-biology'
+    weight = 10
+  [[menus.main]]
+    name = 'computational pathology'
+    pageRef = '/computational-pathology'
+    weight = 20
+  [[menus.main]]
+    name = 'publications'
+    pageRef = '/publications'
+    weight = 30
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.goldmark.extensions.typographer]
+    disable = false
+  [markup.goldmark.parser.attribute]
+    block = true
+    title = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
+
+[minify.tdewolff.html]
+  keepWhitespace = false

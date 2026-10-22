@@ -1,0 +1,1 @@
+<ol class="watchlist">{{ .Inner | .Page.RenderString (dict "display" "block") | replaceRE `^\s*<ol>|</ol>\s*$` "" | safeHTML }}</ol>

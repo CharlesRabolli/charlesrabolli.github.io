@@ -1,0 +1,33 @@
+{
+  "type": "timeline",
+  "title": "RNA becomes a drug class",
+  "subtitle": "Selected U.S. FDA approvals and firsts, by modality. Hover or tap for details.",
+  "colorBy": "lane",
+  "xmin": 1996, "xmax": 2027, "tickStep": 5, "laneLabelWidth": 170,
+  "lanes": [
+    {"id": "aso", "label": "Antisense oligos", "slot": 0},
+    {"id": "sirna", "label": "siRNA", "slot": 1},
+    {"id": "mrna", "label": "mRNA", "slot": 2},
+    {"id": "edit", "label": "RNA-guided editing", "slot": 3}
+  ],
+  "events": [
+    {"year": 1998, "lane": "aso", "label": "fomivirsen", "major": true, "detail": "CMV retinitis. The first approved antisense drug, injected into the eye."},
+    {"year": 2016, "lane": "aso", "label": "nusinersen", "major": true, "detail": "Spinal muscular atrophy. Splice-switching: forces inclusion of exon 7 in SMN2. Delivered intrathecally."},
+    {"year": 2016.75, "lane": "aso", "label": "eteplirsen", "hideLabel": true, "detail": "Duchenne muscular dystrophy (exon 51 skipping); accelerated approval in 2016."},
+    {"year": 2018.8, "lane": "aso", "label": "inotersen", "hideLabel": true, "detail": "Hereditary transthyretin amyloidosis polyneuropathy (2018)."},
+    {"year": 2023.3, "lane": "aso", "label": "tofersen", "detail": "SOD1 amyotrophic lateral sclerosis (2023)."},
+    {"year": 2023.95, "lane": "aso", "label": "eplontersen", "hideLabel": true, "detail": "Hereditary transthyretin amyloidosis polyneuropathy (2023); GalNAc-conjugated, given monthly."},
+    {"year": 2024.95, "lane": "aso", "label": "olezarsen", "hideLabel": true, "detail": "Familial chylomicronemia syndrome (2024); targets APOC3."},
+    {"year": 2018.6, "lane": "sirna", "label": "patisiran", "major": true, "detail": "Hereditary transthyretin amyloidosis (2018). The first approved siRNA, packaged in lipid nanoparticles."},
+    {"year": 2019.85, "lane": "sirna", "label": "givosiran", "hideLabel": true, "detail": "Acute hepatic porphyria (2019). The first GalNAc-conjugated siRNA, injected under the skin."},
+    {"year": 2020.9, "lane": "sirna", "label": "lumasiran", "hideLabel": true, "detail": "Primary hyperoxaluria type 1 (2020)."},
+    {"year": 2021.95, "lane": "sirna", "label": "inclisiran", "major": true, "detail": "LDL cholesterol lowering by silencing PCSK9 (2021). Maintenance dosing twice a year."},
+    {"year": 2022.45, "lane": "sirna", "label": "vutrisiran", "hideLabel": true, "detail": "Hereditary transthyretin amyloidosis polyneuropathy (2022)."},
+    {"year": 2023.7, "lane": "sirna", "label": "nedosiran", "hideLabel": true, "detail": "Primary hyperoxaluria type 1 (2023)."},
+    {"year": 2025.25, "lane": "sirna", "label": "fitusiran", "detail": "Hemophilia A or B prophylaxis by silencing antithrombin (2025)."},
+    {"year": 2020.95, "lane": "mrna", "label": "COVID-19 vaccines", "major": true, "detail": "Emergency use authorization in December 2020 for two modified-nucleoside mRNA vaccines; full approvals followed in 2021–2022."},
+    {"year": 2024.4, "lane": "mrna", "label": "RSV vaccine", "detail": "An mRNA vaccine against respiratory syncytial virus for older adults (2024)."},
+    {"year": 2023.93, "lane": "edit", "label": "exa-cel", "major": true, "detail": "Sickle cell disease (2023). The first approved CRISPR therapy; cells are edited outside the body with a Cas9 guide RNA."},
+    {"year": 2025.4, "lane": "edit", "label": "bespoke base editor", "detail": "A single infant with CPS1 deficiency is treated in vivo with an mRNA-encoded base editor and guide RNA in lipid nanoparticles (reported 2025). A case, not an approval."}
+  ]
+}

@@ -1,0 +1,57 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{ $title := cond .IsHome (printf "%s — %s" site.Title "physician-scientist") (printf "%s — %s" .Title site.Title) }}
+<title>{{ $title }}</title>
+{{ $desc := cond .IsHome site.Params.description (or .Params.description .Summary site.Params.description) | plainify | truncate 200 }}
+<meta name="description" content="{{ $desc }}">
+<meta name="author" content="{{ site.Params.author }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<meta property="og:type" content="{{ cond .IsHome "website" "article" }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+{{ $img := or .Params.thumbnail site.Params.image }}
+<meta property="og:image" content="{{ $img | absURL }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#fbfaf8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1520" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script>
+  (function () {
+    try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+{{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Charles P. Rabolli",
+  "url": "{{ site.BaseURL }}",
+  "image": "{{ site.Params.image | absURL }}",
+  "jobTitle": "MD/PhD Candidate",
+  "affiliation": { "@type": "Organization", "name": "The Ohio State University" },
+  "alumniOf": ["The Ohio State University", "Rutgers University"],
+  "sameAs": [{{ range $i, $s := site.Params.social }}{{ if $i }}, {{ end }}"{{ $s.url }}"{{ end }}]
+}
+</script>
+{{ end }}
+{{ if eq .Layout "longform" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ .Title }},
+  "description": {{ $desc }},
+  "author": { "@type": "Person", "name": "Charles P. Rabolli", "url": "{{ site.BaseURL }}" },
+  "datePublished": "{{ .Date.Format "2006-01-02" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+  "image": "{{ $img | absURL }}"
+}
+</script>
+{{ end }}

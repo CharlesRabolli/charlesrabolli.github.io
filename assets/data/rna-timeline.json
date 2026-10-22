@@ -1,0 +1,267 @@
+{
+ "type": "timeline",
+ "title": "Seventy years of RNA biology",
+ "subtitle": "Selected milestones by theme. Hover or tap a marker for details.",
+ "colorBy": "flag",
+ "legend": [
+  {
+   "slot": 1,
+   "label": "Nobel-recognized work"
+  },
+  {
+   "slot": 0,
+   "label": "Other milestone"
+  }
+ ],
+ "xmin": 1955,
+ "xmax": 2027,
+ "tickStep": 10,
+ "laneLabelWidth": 140,
+ "lanes": [
+  {
+   "id": "msg",
+   "label": "The message"
+  },
+  {
+   "id": "cat",
+   "label": "RNA as catalyst"
+  },
+  {
+   "id": "reg",
+   "label": "RNA as regulator"
+  },
+  {
+   "id": "mark",
+   "label": "Chemical marks"
+  },
+  {
+   "id": "med",
+   "label": "RNA as medicine"
+  },
+  {
+   "id": "ai",
+   "label": "Computation"
+  }
+ ],
+ "events": [
+  {
+   "year": 1961,
+   "lane": "msg",
+   "label": "mRNA",
+   "major": true,
+   "flag": false,
+   "detail": "Brenner, Jacob & Meselson and Gros et al. show an unstable RNA carries genetic information from genes to ribosomes. Jacob & Monod name it messenger RNA."
+  },
+  {
+   "year": 1966,
+   "lane": "msg",
+   "label": "Genetic code solved",
+   "flag": true,
+   "detail": "Begun with Nirenberg & Matthaei's poly(U) experiment in 1961; Holley sequenced the first tRNA in 1965. Nobel 1968 to Holley, Khorana & Nirenberg."
+  },
+  {
+   "year": 1970,
+   "lane": "msg",
+   "label": "Reverse transcriptase",
+   "flag": true,
+   "detail": "Temin & Mizutani and Baltimore show RNA can be copied back into DNA. Nobel 1975."
+  },
+  {
+   "year": 1975,
+   "lane": "msg",
+   "label": "5′ cap",
+   "detail": "The m7G cap on eukaryotic mRNA is identified by several groups (Shatkin, Furuichi, Miura and colleagues).",
+   "hideLabel": true
+  },
+  {
+   "year": 1977,
+   "lane": "msg",
+   "label": "Splicing",
+   "major": true,
+   "flag": true,
+   "detail": "Berget, Moore & Sharp and Chow, Gelinas, Broker & Roberts discover split genes in adenovirus. Nobel 1993 to Roberts & Sharp."
+  },
+  {
+   "year": 1982,
+   "lane": "cat",
+   "label": "Self-splicing intron",
+   "major": true,
+   "flag": true,
+   "detail": "Cech's lab shows a Tetrahymena intron splices itself out with no protein. Nobel (Chemistry) 1989 to Cech & Altman."
+  },
+  {
+   "year": 1983,
+   "lane": "cat",
+   "label": "RNase P",
+   "hideLabel": true,
+   "flag": true,
+   "detail": "Altman's lab shows the RNA subunit of RNase P is the catalyst. Nobel (Chemistry) 1989."
+  },
+  {
+   "year": 1986,
+   "lane": "cat",
+   "label": "“The RNA world”",
+   "detail": "Walter Gilbert names the hypothesis that early life ran on RNA alone."
+  },
+  {
+   "year": 2000,
+   "lane": "cat",
+   "label": "Ribosome is a ribozyme",
+   "major": true,
+   "flag": true,
+   "detail": "Atomic structures (Ban, Nissen et al.) show the peptidyl transferase center is made of RNA. Nobel (Chemistry) 2009 to Ramakrishnan, Steitz & Yonath."
+  },
+  {
+   "year": 1991,
+   "lane": "reg",
+   "label": "XIST",
+   "detail": "A long noncoding RNA that silences one X chromosome in female cells."
+  },
+  {
+   "year": 1993,
+   "lane": "reg",
+   "label": "lin-4 microRNA",
+   "major": true,
+   "flag": true,
+   "detail": "Lee, Feinbaum & Ambros and Wightman, Ha & Ruvkun discover the first microRNA in C. elegans. Nobel 2024 to Ambros & Ruvkun."
+  },
+  {
+   "year": 1998,
+   "lane": "reg",
+   "label": "RNAi",
+   "major": true,
+   "flag": true,
+   "detail": "Fire, Mello and colleagues show double-stranded RNA silences matching genes. Nobel 2006."
+  },
+  {
+   "year": 2000,
+   "lane": "reg",
+   "label": "let-7",
+   "hideLabel": true,
+   "detail": "A second microRNA, conserved from worms to humans, shows miRNAs are a general mechanism."
+  },
+  {
+   "year": 2001,
+   "lane": "reg",
+   "label": "siRNA in mammals",
+   "detail": "Elbashir, Tuschl and colleagues silence mammalian genes with 21-nucleotide duplexes.",
+   "hideLabel": true
+  },
+  {
+   "year": 2012,
+   "lane": "reg",
+   "label": "CRISPR guide RNA",
+   "major": true,
+   "flag": true,
+   "detail": "Jinek et al. reprogram Cas9 with a dual-RNA guide. Nobel (Chemistry) 2020 to Charpentier & Doudna."
+  },
+  {
+   "year": 1974,
+   "lane": "mark",
+   "label": "m6A in mRNA",
+   "major": true,
+   "detail": "Desrosiers, Friderici & Rottman (and Perry & Kelley) find N6-methyladenosine inside messenger RNA."
+  },
+  {
+   "year": 1997,
+   "lane": "mark",
+   "label": "METTL3 cloned",
+   "detail": "Bokar et al. identify MT-A70, the methyltransferase subunit later named METTL3."
+  },
+  {
+   "year": 2011,
+   "lane": "mark",
+   "label": "FTO erases m6A",
+   "major": true,
+   "detail": "Jia et al. show the obesity-associated protein FTO demethylates m6A, implying the mark is reversible."
+  },
+  {
+   "year": 2012,
+   "lane": "mark",
+   "label": "m6A maps",
+   "hideLabel": true,
+   "detail": "MeRIP-seq (Meyer et al.) and m6A-seq (Dominissini et al.) map m6A across the transcriptome: thousands of genes, enriched near stop codons."
+  },
+  {
+   "year": 2014,
+   "lane": "mark",
+   "label": "Writers & readers",
+   "detail": "The METTL3–METTL14 writer complex is defined, and YTHDF2 is shown to route methylated mRNA to decay.",
+   "hideLabel": true
+  },
+  {
+   "year": 2018,
+   "lane": "mark",
+   "label": "Direct RNA nanopore",
+   "detail": "Garalde et al. sequence native RNA molecules, carrying their modifications, through a nanopore."
+  },
+  {
+   "year": 2024,
+   "lane": "mark",
+   "label": "NASEM report",
+   "detail": "The National Academies call for a coordinated effort to sequence RNA and its modifications."
+  },
+  {
+   "year": 1998,
+   "lane": "med",
+   "label": "First antisense drug",
+   "detail": "Fomivirsen is approved for CMV retinitis."
+  },
+  {
+   "year": 2005,
+   "lane": "med",
+   "label": "Modified nucleosides",
+   "major": true,
+   "flag": true,
+   "detail": "Karikó, Weissman and colleagues show modified nucleosides let mRNA evade innate immune sensors. Nobel 2023."
+  },
+  {
+   "year": 2016,
+   "lane": "med",
+   "label": "Nusinersen",
+   "detail": "A splice-switching antisense drug for spinal muscular atrophy.",
+   "hideLabel": true
+  },
+  {
+   "year": 2018,
+   "lane": "med",
+   "label": "First siRNA drug",
+   "hideLabel": true,
+   "detail": "Patisiran is approved for hereditary transthyretin amyloidosis."
+  },
+  {
+   "year": 2020,
+   "lane": "med",
+   "label": "mRNA vaccines",
+   "major": true,
+   "detail": "Modified-nucleoside mRNA vaccines against SARS-CoV-2 are authorized in December 2020."
+  },
+  {
+   "year": 2025,
+   "lane": "med",
+   "label": "Bespoke base editing",
+   "detail": "An infant with CPS1 deficiency receives a personalized, mRNA-encoded base editor delivered by lipid nanoparticles."
+  },
+  {
+   "year": 2019,
+   "lane": "ai",
+   "label": "SpliceAI",
+   "detail": "A deep network predicts splicing from raw sequence and flags cryptic splice variants."
+  },
+  {
+   "year": 2022,
+   "lane": "ai",
+   "label": "m6Anet",
+   "hideLabel": true,
+   "detail": "Multiple-instance learning detects m6A from nanopore current signal."
+  },
+  {
+   "year": 2024,
+   "lane": "ai",
+   "label": "AlphaFold 3",
+   "major": true,
+   "flag": false,
+   "detail": "Structure prediction extends to complexes containing RNA and DNA. (The 2024 Nobel Prize in Chemistry recognized AlphaFold's earlier protein-structure work.)"
+  }
+ ]
+}
