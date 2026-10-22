@@ -1,0 +1,34 @@
+{{ define "main" }}
+{{ $c := site.Params.contact }}
+{{ $linkedin := "" }}{{ range site.Params.social }}{{ if eq .name "linkedin" }}{{ $linkedin = .url }}{{ end }}{{ end }}
+<div class="wrap wrap--narrow">
+  <header class="page-head">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="dek">{{ . | markdownify }}</p>{{ end }}
+  </header>
+  <div class="contact">
+    {{ with $c.form }}
+    <a class="contact__card contact__card--primary" href="{{ . }}" rel="noopener" target="_blank">
+      <span class="contact__kicker">Send a message</span>
+      <span class="contact__title">Contact form <span aria-hidden="true">↗</span></span>
+      <span class="contact__note">A short form that comes straight to me. I'll reply from my own address.</span>
+    </a>
+    {{ end }}
+    {{ with $c.booking }}
+    <a class="contact__card{{ if not $c.form }} contact__card--primary{{ end }}" href="{{ . }}" rel="noopener" target="_blank">
+      <span class="contact__kicker">Talk live</span>
+      <span class="contact__title">Book a time <span aria-hidden="true">↗</span></span>
+      <span class="contact__note">Pick a slot that works for you; you'll get a calendar invite.</span>
+    </a>
+    {{ end }}
+    {{ with $linkedin }}
+    <a class="contact__card{{ if and (not $c.form) (not $c.booking) }} contact__card--primary{{ end }}" href="{{ . }}" rel="noopener" target="_blank">
+      <span class="contact__kicker">Message</span>
+      <span class="contact__title">LinkedIn <span aria-hidden="true">↗</span></span>
+      <span class="contact__note">Send me a connection request or a message.</span>
+    </a>
+    {{ end }}
+  </div>
+  <div class="prose">{{ .Content }}</div>
+</div>
+{{ end }}

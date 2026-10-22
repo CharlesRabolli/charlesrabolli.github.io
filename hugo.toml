@@ -9,9 +9,14 @@ summaryLength = 40
   author = 'Charles P. Rabolli'
   description = 'Charles P. Rabolli, PhD — MD/PhD candidate at The Ohio State University working across RNA biology, cardiovascular science, and computational pathology.'
   role = 'physician-scientist in training · rna biology · computational pathology'
-  email = 'charles.rabolli@osu.edu'
   image = '/img/charles.jpg'
   location = 'Columbus, Ohio'
+
+  # No email address is published anywhere on the site. "Get in touch" goes to /contact/,
+  # which shows whichever of these links are set (plus LinkedIn as a fallback).
+  [params.contact]
+    form = ''      # link to a contact form (e.g. Google Forms, Tally, Formspree)
+    booking = ''   # link to a booking calendar (e.g. Calendly, Cal.com, Google appointment schedule)
 
   [[params.social]]
     name = 'linkedin'

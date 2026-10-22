@@ -497,3 +497,12 @@ svg .t-serif { font-family: var(--serif); }
 .ps-grid label { display: block; padding-top: 6px; }
 .ps-grid label b { color: var(--ink); margin-left: 4px; }
 @media (max-width: 640px) { .ps-grid { grid-template-columns: 1fr; } }
+
+/* contact page */
+.contact { display: grid; gap: 14px; margin: 8px 0 32px; }
+.contact__card { display: grid; gap: 4px; padding: 20px 22px; border: 1px solid var(--rule); border-radius: 12px; background: var(--bg-elev); text-decoration: none; color: inherit; transition: border-color .15s, transform .15s, box-shadow .15s; }
+.contact__card:hover { border-color: var(--rule-strong); transform: translateY(-2px); box-shadow: var(--shadow); }
+.contact__card--primary { border-left: 4px solid var(--accent); }
+.contact__kicker { font: 500 11.5px/1.3 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--accent-ink); }
+.contact__title { font: 600 20px/1.3 var(--sans); color: var(--ink); letter-spacing: -.015em; }
+.contact__note { font-size: 15px; color: var(--ink-3); }

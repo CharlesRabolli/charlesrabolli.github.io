@@ -23,7 +23,7 @@
       {{ .Content }}
     </div>
     <footer class="longform__foot">
-      <p>Thanks for reading. Corrections, suggestions, and arguments are welcome at <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a>.</p>
+      <p>Thanks for reading. Corrections, suggestions, and arguments are welcome through my <a href="/contact/">contact page</a>.</p>
       <p class="longform__more">Also on this site:
         {{ range where site.RegularPages "Layout" "longform" }}{{ if ne .Permalink $.Permalink }} <a href="{{ .RelPermalink }}">{{ .Title }} →</a>{{ end }}{{ end }}
       </p>

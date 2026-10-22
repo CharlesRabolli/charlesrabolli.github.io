@@ -1,7 +1,7 @@
 <footer class="site-footer">
   <div class="site-footer__inner">
     <div class="site-footer__links">
-      <a href="mailto:{{ site.Params.email }}">email</a>
+      <a href="/contact/">contact</a>
       {{ range site.Params.social }}<a href="{{ .url }}" rel="me noopener">{{ .name }}</a>{{ end }}
     </div>
     <p>© {{ now.Year }} Charles P. Rabolli · {{ site.Params.location | lower }}</p>
