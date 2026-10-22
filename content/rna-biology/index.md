@@ -9,8 +9,6 @@ cardText: "Seventy years of RNA in seven parts, from the discovery of the messen
 parts: "7 parts"
 card: "svg/rna-card.svg"
 thumbnail: "/img/charles.jpg"
-date: 2026-10-22
-lastmod: 2026-10-22
 scripts: ["js/drach.js"]
 ---
 
@@ -362,6 +360,6 @@ That last point is why I'm training to be a physician-scientist. The best way I 
 
 If this page is useful in your teaching or writing, please cite it as:
 
-<div class="cite-box">Rabolli CP. RNA: From Messenger to Medicine. charlesrabolli.com, 2026. https://charlesrabolli.com/rna-biology/</div>
+<div class="cite-box">Rabolli CP. RNA: From Messenger to Medicine. charlesrabolli.com. https://charlesrabolli.com/rna-biology/</div>
 
 The text and original figures are © Charles P. Rabolli. Videos are embedded from their original publishers and remain their property. This page is educational and not medical advice.

@@ -49,8 +49,6 @@
   "headline": {{ .Title }},
   "description": {{ $desc }},
   "author": { "@type": "Person", "name": "Charles P. Rabolli", "url": "{{ site.BaseURL }}" },
-  "datePublished": "{{ .Date.Format "2006-01-02" }}",
-  "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
   "image": "{{ $img | absURL }}"
 }
 </script>

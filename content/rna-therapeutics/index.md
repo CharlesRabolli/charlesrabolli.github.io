@@ -9,8 +9,6 @@ cardText: "The business side of RNA medicines: the modalities, why chemistry and
 parts: "8 parts"
 card: "svg/rt-card.svg"
 thumbnail: "/img/charles.jpg"
-date: 2026-10-22
-lastmod: 2026-10-22
 scripts: ["js/peaksales.js"]
 ---
 
@@ -282,6 +280,6 @@ A few convictions:
 
 ## Citation {#citation}
 
-<div class="cite-box">Rabolli CP. RNA Therapeutics: The Business of Programmable Medicine. charlesrabolli.com, 2026. https://charlesrabolli.com/rna-therapeutics/</div>
+<div class="cite-box">Rabolli CP. RNA Therapeutics: The Business of Programmable Medicine. charlesrabolli.com. https://charlesrabolli.com/rna-therapeutics/</div>
 
 The text and original figures are © Charles P. Rabolli. Videos are embedded from their original publishers. This page is educational. It is not investment, legal, or medical advice, and mentions of companies are not endorsements.

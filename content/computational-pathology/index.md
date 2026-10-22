@@ -9,8 +9,6 @@ cardText: "From Virchow's microscope to gigapixel slides, CAMELYON16, weakly sup
 parts: "8 parts"
 card: "svg/cp-card.svg"
 thumbnail: "/img/charles.jpg"
-date: 2026-10-22
-lastmod: 2026-10-22
 scripts: ["js/gigapixel.js"]
 ---
 
@@ -296,6 +294,6 @@ A few convictions I hold:
 
 If this page is useful in your teaching or writing, please cite it as:
 
-<div class="cite-box">Rabolli CP. Computational Pathology: Teaching Machines to Read Tissue. charlesrabolli.com, 2026. https://charlesrabolli.com/computational-pathology/</div>
+<div class="cite-box">Rabolli CP. Computational Pathology: Teaching Machines to Read Tissue. charlesrabolli.com. https://charlesrabolli.com/computational-pathology/</div>
 
 The text and original figures are © Charles P. Rabolli. Videos are embedded from their original publishers and remain their property. This page is educational and not medical advice.
