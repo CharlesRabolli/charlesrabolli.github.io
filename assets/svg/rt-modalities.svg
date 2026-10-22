@@ -1,0 +1,72 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="mo-t">
+  <title id="mo-t">Where each RNA modality acts: editors change DNA; splice-switching antisense oligos act on pre-mRNA in the nucleus; RNase H antisense oligos and siRNAs destroy mRNA; RNA-editing oligos recode mRNA; mRNA medicines add a new message; aptamers bind proteins.</title>
+  <defs><marker id="mo-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="d-ink3"/></marker></defs>
+  <rect x="10" y="10" width="740" height="400" rx="20" class="d-sunk"/>
+  <rect x="26" y="40" width="300" height="250" rx="18" class="d-bg d-ink3-s" stroke-width="1.2" stroke-dasharray="6 5"/>
+  <text x="44" y="64" font-size="12" letter-spacing="1.5" class="t-mono d-ink3">NUCLEUS</text>
+  <text x="360" y="64" font-size="12" letter-spacing="1.5" class="t-mono d-ink3">CYTOPLASM</text>
+  <!-- DNA -->
+  <g>
+    <path d="M60 110 C80 96 100 124 120 110 S160 96 180 110" class="d-navy-s" stroke-width="3" fill="none"/>
+    <path d="M60 110 C80 124 100 96 120 110 S160 124 180 110" class="d-navy-s" stroke-width="3" fill="none" opacity="0.5"/>
+    <text x="194" y="115" font-size="13" font-weight="700" class="d-ink">DNA</text>
+  </g>
+  <path d="M120 128 V158" class="d-ink3-s" stroke-width="1.5" marker-end="url(#mo-a)"/>
+  <!-- pre-mRNA -->
+  <g>
+    <rect x="60" y="168" width="40" height="14" rx="3" class="d-s1"/><line x1="100" y1="175" x2="130" y2="175" class="d-ink3-s" stroke-width="2"/>
+    <rect x="130" y="168" width="30" height="14" rx="3" class="d-s1"/><line x1="160" y1="175" x2="190" y2="175" class="d-ink3-s" stroke-width="2"/>
+    <rect x="190" y="168" width="40" height="14" rx="3" class="d-s1"/>
+    <text x="244" y="180" font-size="13" font-weight="700" class="d-ink">pre-mRNA</text>
+  </g>
+  <path d="M230 200 C280 230 330 240 380 240" class="d-ink3-s" stroke-width="1.5" fill="none" marker-end="url(#mo-a)"/>
+  <text x="236" y="236" font-size="11" class="d-ink3">splice, export</text>
+  <!-- mRNA -->
+  <g>
+    <circle cx="396" cy="246" r="6" class="d-navy"/>
+    <rect x="404" y="240" width="110" height="12" rx="3" class="d-s1"/>
+    <line x1="514" y1="246" x2="560" y2="246" class="d-ink3-s" stroke-width="2"/>
+    <text x="566" y="251" font-size="12" class="t-mono d-ink2">AAAA</text>
+    <text x="404" y="276" font-size="13" font-weight="700" class="d-ink">mRNA</text>
+  </g>
+  <path d="M470 236 V196" class="d-ink3-s" stroke-width="1.5" marker-end="url(#mo-a)"/>
+  <!-- ribosome + protein -->
+  <g>
+    <ellipse cx="470" cy="180" rx="26" ry="14" class="d-ink3" opacity="0.5"/>
+    <path d="M496 172 C520 150 540 170 560 150 C580 130 600 150 620 132" class="d-s4-s" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <text x="630" y="132" font-size="13" font-weight="700" class="d-ink">protein</text>
+  </g>
+  <!-- intervention badges -->
+  <g font-size="11.5">
+    <!-- editors -> DNA -->
+    <rect x="34" y="296" width="200" height="50" rx="10" class="d-bg d-s3-s" stroke-width="1.5"/>
+    <text x="46" y="316" font-weight="700" class="d-ink">Gene &amp; base editors</text>
+    <text x="46" y="333" class="d-ink3">mRNA + guide RNA → edit DNA once</text>
+    <path d="M90 294 C80 250 72 160 84 126" class="d-s3-s" stroke-width="1.5" stroke-dasharray="4 3" fill="none" marker-end="url(#mo-a)"/>
+    <!-- splice switching -->
+    <rect x="34" y="352" width="200" height="50" rx="10" class="d-bg d-s1-s" stroke-width="1.5"/>
+    <text x="46" y="372" font-weight="700" class="d-ink">Splice-switching ASOs</text>
+    <text x="46" y="389" class="d-ink3">change which exons are kept</text>
+    <path d="M190 350 C210 300 200 220 176 188" class="d-s1-s" stroke-width="1.5" stroke-dasharray="4 3" fill="none" marker-end="url(#mo-a)"/>
+    <!-- RNase H ASO and siRNA -->
+    <rect x="262" y="320" width="230" height="50" rx="10" class="d-bg d-s2-s" stroke-width="1.5"/>
+    <text x="274" y="340" font-weight="700" class="d-ink">Silencers: siRNA, gapmer ASOs</text>
+    <text x="274" y="357" class="d-ink3">find a message and destroy it</text>
+    <path d="M420 318 L440 260" class="d-s2-s" stroke-width="1.5" stroke-dasharray="4 3" fill="none" marker-end="url(#mo-a)"/>
+    <!-- RNA editing -->
+    <rect x="506" y="320" width="232" height="50" rx="10" class="d-bg d-accent-s" stroke-width="1.5"/>
+    <text x="518" y="340" font-weight="700" class="d-ink">RNA-editing oligos</text>
+    <text x="518" y="357" class="d-ink3">recruit ADAR to fix one base (A→I)</text>
+    <path d="M560 318 L500 262" class="d-accent-s" stroke-width="1.5" stroke-dasharray="4 3" fill="none" marker-end="url(#mo-a)"/>
+    <!-- mRNA medicines -->
+    <rect x="560" y="70" width="178" height="50" rx="10" class="d-bg d-s4-s" stroke-width="1.5"/>
+    <text x="572" y="90" font-weight="700" class="d-ink">mRNA medicines</text>
+    <text x="572" y="107" class="d-ink3">deliver a new message</text>
+    <path d="M600 122 C590 180 560 220 540 238" class="d-s4-s" stroke-width="1.5" stroke-dasharray="4 3" fill="none" marker-end="url(#mo-a)"/>
+    <!-- aptamers -->
+    <rect x="360" y="70" width="180" height="50" rx="10" class="d-bg d-rule-s" stroke-width="1.2"/>
+    <text x="372" y="90" font-weight="700" class="d-ink">Aptamers</text>
+    <text x="372" y="107" class="d-ink3">folded RNA binds a protein</text>
+    <path d="M540 108 C570 120 580 128 590 134" class="d-ink3-s" stroke-width="1.5" stroke-dasharray="4 3" fill="none" marker-end="url(#mo-a)"/>
+  </g>
+</svg>

@@ -10,7 +10,6 @@ summaryLength = 40
   description = 'Charles P. Rabolli, PhD — MD/PhD candidate at The Ohio State University working across RNA biology, cardiovascular science, and computational pathology.'
   role = 'physician-scientist in training · rna biology · computational pathology'
   email = 'charles.rabolli@osu.edu'
-  cv = '/uploads/Rabolli_CV.pdf'
   image = '/img/charles.jpg'
   location = 'Columbus, Ohio'
 
@@ -35,6 +34,10 @@ summaryLength = 40
     name = 'rna biology'
     pageRef = '/rna-biology'
     weight = 10
+  [[menus.main]]
+    name = 'rna therapeutics'
+    pageRef = '/rna-therapeutics'
+    weight = 15
   [[menus.main]]
     name = 'computational pathology'
     pageRef = '/computational-pathology'

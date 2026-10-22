@@ -242,7 +242,7 @@ The other RNA I spent time on is tRNA, Crick's adaptor. Before a tRNA can delive
 
 ## Part VI: RNA as Medicine {#part-vi}
 
-Every regulatory principle in Parts II–IV has become a drug. If you can predict how an RNA pairs, you can design a molecule that binds it; if you know how a cell degrades messages, you can recruit that machinery to a target of your choice.
+Every regulatory principle in Parts II–IV has become a drug. If you can predict how an RNA pairs, you can design a molecule that binds it; if you know how a cell degrades messages, you can recruit that machinery to a target of your choice. (For the business side of this story, including how these companies were built, financed, and priced, see my [RNA therapeutics](/rna-therapeutics/) guide.)
 
 {{< fig chart="rna-medicines" class="wide" >}}**RNA becomes a drug class.** Selected U.S. approvals and firsts for antisense oligonucleotides, siRNAs, mRNA, and RNA-guided editing. After a slow start (one antisense drug in 1998, then little for nearly two decades), chemistry and delivery improvements produced a steady stream of approvals.{{< /fig >}}
 
@@ -300,7 +300,7 @@ SpliceAI is a deep residual network that takes a long stretch of pre-mRNA sequen
 
 Nanopore direct RNA sequencing produces a raw current signal for each molecule, and turning that into modification calls is a machine-learning problem. The training labels are awkward. Experiments like miCLIP or GLORI tell you that *some fraction* of molecules at a site are methylated, but not which individual reads. m6Anet handled this with *multiple instance learning*: treat each site as a "bag" of reads, know only the bag-level label, and let the model learn which reads drive it ([Hendra et al., 2022](https://pubmed.ncbi.nlm.nih.gov/36357692/)).
 
-If that framing sounds familiar from computational pathology, it should. It is the same idea used to diagnose a gigapixel whole-slide image from a single slide-level label, treating the slide as a bag of tissue tiles. I write about that in detail on my [computational pathology](/computational-pathology/#part-v) page. Seeing the same mathematical idea solve my PhD problem and my current research problem was one of the more satisfying moments of the last two years.
+If that framing sounds familiar from computational pathology, it should. It is the same idea used to diagnose a gigapixel whole-slide image from a single slide-level label, treating the slide as a bag of tissue tiles. I write about that in detail on my [computational pathology](/computational-pathology/#part-v) page.
 
 ### Folding RNA
 

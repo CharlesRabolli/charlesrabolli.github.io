@@ -1,5 +1,5 @@
 {{- $type := .Get "type" | default "note" -}}
-{{- $labels := dict "bench" "From my bench" "lab" "From the lab" "microscope" "At the microscope" "bedside" "At the bedside" "key" "Key idea" "note" "Note" "aside" "Aside" "caution" "A caution" -}}
+{{- $labels := dict "bench" "From my bench" "lab" "From the lab" "microscope" "At the microscope" "bedside" "At the bedside" "deal" "Deal sheet" "founder" "If you're building" "key" "Key idea" "note" "Note" "aside" "Aside" "caution" "A caution" -}}
 <aside class="callout callout--{{ $type }}">
   <p class="callout__label">{{ index $labels $type }}{{ with .Get "title" }} · <span>{{ . }}</span>{{ end }}</p>
   <div class="callout__body">{{ .Inner | .Page.RenderString (dict "display" "block") }}</div>

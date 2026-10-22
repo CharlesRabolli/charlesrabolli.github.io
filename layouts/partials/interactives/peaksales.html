@@ -1,0 +1,28 @@
+<div class="widget" id="peaksales">
+  <div class="widget__head">
+    <p class="widget__kicker">Try it</p>
+    <p class="widget__title">A back-of-the-envelope peak sales model</p>
+  </div>
+  <div class="widget__body">
+    <div class="widget__row" role="group" aria-label="Illustrative scenarios">
+      <span class="gp-lab">preset</span>
+      <button type="button" data-preset="ultra" aria-pressed="true">ultra-rare</button>
+      <button type="button" data-preset="rare" aria-pressed="false">rare</button>
+      <button type="button" data-preset="common" aria-pressed="false">common chronic</button>
+    </div>
+    <div class="ps-grid">
+      <label>Eligible U.S. patients <b data-o="pop"></b><input type="range" data-k="pop" min="2" max="8" step="0.05"></label>
+      <label>Diagnosed <b data-o="dx"></b><input type="range" data-k="dx" min="5" max="100" step="1"></label>
+      <label>Treated at peak (of diagnosed) <b data-o="tx"></b><input type="range" data-k="tx" min="1" max="100" step="1"></label>
+      <label>Net price per patient-year <b data-o="price"></b><input type="range" data-k="price" min="3" max="6.3" step="0.02"></label>
+      <label>Royalty to the originator <b data-o="roy"></b><input type="range" data-k="roy" min="0" max="25" step="1"></label>
+    </div>
+    <div class="widget__stats">
+      <div class="widget__stat"><b data-r="pts">0</b><span>patients on therapy</span></div>
+      <div class="widget__stat"><b data-r="rev">0</b><span>peak annual net sales</span></div>
+      <div class="widget__stat"><b data-r="royalty">0</b><span>annual royalty to licensor</span></div>
+      <div class="widget__stat"><b data-r="perb">0</b><span>patients per $1B in sales</span></div>
+    </div>
+    <p class="widget__note">Illustrative only, not a forecast or investment advice. Real models add ex-U.S. markets, ramp time, persistence, gross-to-net discounts, competition, patent expiry, and probability of approval. The point is the shape of the trade-off: a few thousand patients at rare-disease prices and millions at primary-care prices can produce similar revenue, but they demand very different trials, sales forces, and payer arguments.</p>
+  </div>
+</div>

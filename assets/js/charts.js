@@ -188,7 +188,9 @@
     var svg = el('svg', { width: '100%', role: 'img', 'aria-label': spec.title || 'Line chart', viewBox: '0 0 ' + W + ' ' + H }, host);
     var top = header(svg, spec, W) + (spec.yLabel ? 24 : 8);
     var padL = 46, padR = spec.padR || 130, padB = 28;
-    var xs = Object.keys(spec.series[0].values).map(Number);
+    var xs = [];
+    spec.series.forEach(function (sr) { Object.keys(sr.values).forEach(function (k) { if (xs.indexOf(+k) === -1) xs.push(+k); }); });
+    xs.sort(function (a, b) { return a - b; });
     var x0 = spec.xmin || Math.min.apply(null, xs), x1 = spec.xmax || Math.max.apply(null, xs);
     var ymax = spec.ymax || Math.max.apply(null, spec.series.map(function (s) { return Math.max.apply(null, Object.values(s.values)); }));
     var step = Math.pow(10, Math.floor(Math.log10(ymax)));
@@ -198,7 +200,7 @@
     var Y = function (v) { return H - padB - v / niceMax * (H - padB - top); };
     for (var g = 0; g <= niceMax + 1e-9; g += step) {
       el('line', { x1: padL, x2: W - padR, y1: Y(g), y2: Y(g), class: 'd-rule-s', 'stroke-width': 1, opacity: g === 0 ? 1 : 0.5 }, svg);
-      txt(svg, padL - 8, Y(g) + 4, fmt(g), { 'font-size': 11, class: 'd-ink3 t-mono', 'text-anchor': 'end' });
+      txt(svg, padL - 8, Y(g) + 4, (spec.valuePrefix || '') + (spec.valueFormat === 'raw' ? +g.toFixed(2) : fmt(g)) + (spec.valueSuffix || ''), { 'font-size': 11, class: 'd-ink3 t-mono', 'text-anchor': 'end' });
     }
     var xt = spec.xTicks || 5;
     for (var t = Math.ceil(x0 / xt) * xt; t <= x1; t += xt) txt(svg, X(t), H - 8, String(t), { 'font-size': 11, class: 'd-ink3 t-mono', 'text-anchor': 'middle' });
@@ -210,7 +212,7 @@
     });
 
     var pts = spec.series.map(function (s, si) {
-      var arr = xs.filter(function (x) { return x >= x0 && x <= x1; }).map(function (x) { return [x, s.values[x]]; });
+      var arr = xs.filter(function (x) { return x >= x0 && x <= x1 && s.values[x] != null; }).map(function (x) { return [x, s.values[x]]; });
       var col = color(s.slot != null ? s.slot : si);
       var d = arr.map(function (p, i) { return (i ? 'L' : 'M') + X(p[0]).toFixed(1) + ' ' + Y(p[1]).toFixed(1); }).join(' ');
       el('path', { d: d + ' L' + X(arr[arr.length - 1][0]) + ' ' + Y(0) + ' L' + X(arr[0][0]) + ' ' + Y(0) + ' Z', fill: col, opacity: 0.1 }, svg);
@@ -218,7 +220,7 @@
       var last = arr[arr.length - 1];
       el('circle', { cx: X(last[0]), cy: Y(last[1]), r: 4.5, fill: col, stroke: 'var(--bg-elev)', 'stroke-width': 2 }, svg);
       txt(svg, X(last[0]) + 10, Y(last[1]) + 4 + (s.labelDy || 0), s.name, { 'font-size': 12, 'font-weight': 600, class: 'd-ink' });
-      txt(svg, X(last[0]) + 10, Y(last[1]) + 19 + (s.labelDy || 0), fmt(last[1]) + ' in ' + last[0], { 'font-size': 11.5, class: 'd-ink3' });
+      txt(svg, X(last[0]) + 10, Y(last[1]) + 19 + (s.labelDy || 0), (spec.valuePrefix || '') + (spec.valueFormat === 'raw' ? last[1] : fmt(last[1])) + (spec.valueSuffix || '') + ' in ' + last[0], { 'font-size': 11.5, class: 'd-ink3' });
       return { s: s, arr: arr, col: col };
     });
 
@@ -241,7 +243,7 @@
         if (v == null) return;
         dots[i].setAttribute('cx', X(yr)); dots[i].setAttribute('cy', Y(v)); dots[i].setAttribute('opacity', 1);
         minY = Math.min(minY, Y(v));
-        html += '<span><i style="background:' + p.col + '"></i>' + p.s.name + ': ' + v.toLocaleString() + '</span>';
+        html += '<span><i style="background:' + p.col + '"></i>' + p.s.name + ': ' + (spec.valuePrefix || '') + v.toLocaleString() + (spec.valueSuffix || '') + '</span>';
       });
       tip.show(html, X(yr) * scale + (s.left - b.left), minY * scale + (s.top - b.top));
     };
@@ -274,7 +276,8 @@
     var bottom = top + spec.items.length * rowH + (groups.length ? groups.length * 18 : 0);
     ticks.forEach(function (t) {
       el('line', { x1: X(t), x2: X(t), y1: top - 2, y2: bottom, class: 'd-rule-s', 'stroke-width': 1, opacity: t === vmin ? 1 : 0.5 }, svg);
-      txt(svg, X(t), bottom + 15, (spec.tickFormat ? spec.tickFormat.replace('{}', fmt(t)) : fmt(t)), { 'font-size': 11, class: 'd-ink3 t-mono', 'text-anchor': 'middle' });
+      var lab = spec.tickLabels ? spec.tickLabels[ticks.indexOf(t)] : (spec.tickFormat ? spec.tickFormat.replace('{}', fmt(t)) : fmt(t));
+      txt(svg, X(t), bottom + 15, lab, { 'font-size': 11, class: 'd-ink3 t-mono', 'text-anchor': 'middle' });
     });
     var lastGroup = null;
     spec.items.forEach(function (d, i) {
@@ -294,16 +297,19 @@
       var p = 'M' + xb + ' ' + (cy - bh / 2) + ' H' + (x - r) + ' Q' + x + ' ' + (cy - bh / 2) + ' ' + x + ' ' + (cy - bh / 2 + r) + ' V' + (cy + bh / 2 - r) + ' Q' + x + ' ' + (cy + bh / 2) + ' ' + (x - r) + ' ' + (cy + bh / 2) + ' H' + xb + ' Z';
       var bar;
       if (spec.marks === 'dot') {
-        el('line', { x1: X(vmin), x2: x, y1: cy, y2: cy, class: 'd-rule-s', 'stroke-width': 1, 'stroke-dasharray': '2 3' }, svg);
+        if (!spec.loDot) el('line', { x1: X(vmin), x2: x, y1: cy, y2: cy, class: 'd-rule-s', 'stroke-width': 1, 'stroke-dasharray': '2 3' }, svg);
         bar = el('circle', { cx: x, cy: cy, r: 6, fill: col, stroke: 'var(--bg-elev)', 'stroke-width': 2 }, svg);
       } else {
         bar = el('path', { d: p, fill: col }, svg);
       }
-      if (d.lo != null && d.hi != null) {
+      if (d.lo != null && d.hi != null && spec.loDot) {
+        el('line', { x1: X(d.lo), x2: X(d.hi), y1: cy, y2: cy, stroke: col, 'stroke-width': 3, opacity: 0.45 }, svg);
+      } else if (d.lo != null && d.hi != null) {
         el('line', { x1: X(d.lo), x2: X(d.hi), y1: cy, y2: cy, class: 'd-ink-s', 'stroke-width': 1.5 }, svg);
         el('line', { x1: X(d.lo), x2: X(d.lo), y1: cy - 5, y2: cy + 5, class: 'd-ink-s', 'stroke-width': 1.5 }, svg);
         el('line', { x1: X(d.hi), x2: X(d.hi), y1: cy - 5, y2: cy + 5, class: 'd-ink-s', 'stroke-width': 1.5 }, svg);
       }
+      if (spec.loDot && d.lo != null) el('circle', { cx: X(d.lo), cy: cy, r: 5, fill: 'var(--bg-elev)', stroke: col, 'stroke-width': 2 }, svg);
       if (spec.marks === 'dot') svg.appendChild(bar);
       var vx = Math.max(x, d.hi != null ? X(d.hi) : x) + (spec.marks === 'dot' ? 12 : 8);
       txt(svg, vx, cy + 4, d.display || (fmt(d.value) + (spec.unit || '')), { 'font-size': 12, class: 'd-ink', 'font-weight': 600 });

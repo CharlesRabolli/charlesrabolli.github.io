@@ -1,0 +1,60 @@
+{
+ "type": "hbar",
+ "title": "Same chemistry, three orders of magnitude in price",
+ "subtitle": "U.S. list price at launch, per patient per year (one-time for exa-cel). Log scale; net prices are lower.",
+ "marks": "dot",
+ "scale": "log",
+ "min": 1000,
+ "max": 5000000,
+ "ticks": [
+  1000,
+  10000,
+  100000,
+  1000000
+ ],
+ "tickLabels": [
+  "$1K",
+  "$10K",
+  "$100K",
+  "$1M"
+ ],
+ "labelWidth": 250,
+ "valueHead": "List price",
+ "items": [
+  {
+   "label": "inclisiran (LDL cholesterol)",
+   "value": 6500,
+   "display": "$6,500 / yr",
+   "slot": 0,
+   "detail": "$3,250 per injection, two maintenance doses a year (2021 launch). Large population: people with high LDL."
+  },
+  {
+   "label": "patisiran (hATTR amyloidosis)",
+   "value": 450000,
+   "display": "$450,000 / yr",
+   "slot": 0,
+   "detail": "Average annual list price at 2018 launch; expected net price about $345,000."
+  },
+  {
+   "label": "olezarsen (FCS)",
+   "value": 595000,
+   "display": "$595,000 / yr",
+   "slot": 0,
+   "detail": "Annual list price at December 2024 launch for familial chylomicronemia syndrome, an ultra-rare disease."
+  },
+  {
+   "label": "nusinersen (SMA), year one",
+   "value": 750000,
+   "display": "$750,000",
+   "slot": 0,
+   "detail": "$125,000 per injection; six doses in year one, three ($375,000) in later years (2016 launch)."
+  },
+  {
+   "label": "exa-cel (sickle cell), one-time",
+   "value": 2200000,
+   "display": "$2.2M once",
+   "slot": 0,
+   "detail": "One-time ex vivo CRISPR therapy (2023 launch). Not chronic dosing, so not directly comparable."
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "hbar",
+  "title": "Durability became a competitive advantage",
+  "subtitle": "Days between maintenance doses for selected approved oligonucleotide drugs (U.S. labels).",
+  "max": 200, "ticks": [0, 30, 90, 180], "tickLabels": ["0", "1 mo", "3 mo", "6 mo"], "labelWidth": 230,
+  "valueHead": "Interval",
+  "items": [
+    {"group": "siRNA", "label": "patisiran (2018) · IV", "value": 21, "display": "every 3 weeks", "slot": 1, "detail": "Lipid-nanoparticle siRNA given by intravenous infusion every 3 weeks."},
+    {"group": "siRNA", "label": "givosiran (2019) · SC", "value": 30, "display": "monthly", "slot": 1, "detail": "First GalNAc-conjugated siRNA; monthly subcutaneous injection."},
+    {"group": "siRNA", "label": "vutrisiran (2022) · SC", "value": 90, "display": "every 3 months", "slot": 1, "detail": "Next-generation GalNAc-siRNA for transthyretin amyloidosis; label expanded to cardiomyopathy in 2025."},
+    {"group": "siRNA", "label": "plozasiran (2025) · SC", "value": 90, "display": "every 3 months", "slot": 1, "detail": "APOC3 siRNA for familial chylomicronemia syndrome."},
+    {"group": "siRNA", "label": "inclisiran (2021) · SC", "value": 180, "display": "every 6 months", "slot": 1, "em": true, "detail": "PCSK9 siRNA; after doses at day 0 and month 3, given every 6 months."},
+    {"group": "Antisense", "label": "eplontersen (2023) · SC", "value": 30, "display": "monthly", "slot": 0, "detail": "GalNAc-conjugated ASO for transthyretin amyloidosis polyneuropathy."},
+    {"group": "Antisense", "label": "olezarsen (2024) · SC", "value": 30, "display": "monthly", "slot": 0, "detail": "GalNAc-conjugated APOC3 ASO for familial chylomicronemia syndrome."},
+    {"group": "Antisense", "label": "nusinersen (2016) · IT", "value": 120, "display": "every 4 months", "slot": 0, "detail": "Intrathecal (spinal) injection; four loading doses, then every 4 months."}
+  ]
+}

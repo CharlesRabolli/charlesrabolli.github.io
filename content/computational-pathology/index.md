@@ -18,11 +18,11 @@ scripts: ["js/gigapixel.js"]
 
 <p class="intro">Anyone who has sat across a double-headed microscope from an experienced pathologist knows the moment. A sweep at low power, a pause, a flick to high power on one cluster of cells, and a decision. Years of pattern recognition get compressed into a few seconds, and it is natural to wonder how much of that a machine could learn.</p>
 
-I came to pathology from the other direction. My PhD was in RNA biology and cardiovascular science: mouse models, sequencing, and molecular mechanisms, which I describe on my [RNA biology](/rna-biology/) page. In medical school I kept being drawn back to the place where all that molecular detail becomes a diagnosis, and that place is usually a glass slide. Since 2025 I've been doing research at Ohio State's AI Lab for Pathology Research (AI4Path), where we work on models that read whole-slide images. Alongside that I've done clinical work in pathology, including hematopathology at Ohio State and a visiting clerkship at Brigham and Women's and Mass General.
+I came to pathology from the other direction. My PhD was in RNA biology and cardiovascular science: mouse models, sequencing, and molecular mechanisms, which I describe on my [RNA biology](/rna-biology/) page. In medical school I kept being drawn back to the place where all that molecular detail becomes a diagnosis, and that place is usually a glass slide. Clinical work in pathology, including hematopathology at Ohio State and a visiting clerkship at Brigham and Women's and Mass General, and time spent annotating whole-slide images for computational pathology research, made me want to understand how this field fits together.
 
 Computational pathology sits at an unusual intersection. The data are among the largest images in medicine, gigapixels per slide. The labels are expensive, noisy, and sometimes disputed by experts. The stakes are high: a pathology report often *is* the diagnosis, the thing that decides whether someone gets surgery, chemotherapy, or reassurance. And the field has moved fast, from hand-crafted nuclear measurements to deep networks to self-supervised foundation models trained on millions of slides, all in about fifteen years.
 
-This page is a guide to that history and to where I think the field is now. It's written for clinicians curious about AI, for machine-learning people curious about pathology, and for students deciding whether to work on this. Like my RNA page, it includes two kinds of asides: **From the lab** boxes describe work I'm involved in, and **At the microscope** boxes connect a topic to what actually happens at sign-out.
+This page is a guide to that history and to where I think the field is now. It's written for clinicians curious about AI, for machine-learning people curious about pathology, and for students deciding whether to work on this. Throughout, **At the microscope** boxes connect a topic to what actually happens at sign-out.
 
 {{< fig chart="cp-timeline" class="wide" >}}**The computational pathology timeline.** Selected milestones across four tracks: the glass slide itself, digitization and regulation, algorithms, and foundation models. Note the long gap between the first computer analysis of cell images in 1966 and the deep-learning results of the 2010s, and how crowded the last three years are.{{< /fig >}}
 
@@ -117,7 +117,7 @@ A convolutional neural network slides small learned filters across an image. Ear
 
 ### U-Net and the art of drawing boundaries
 
-Classifying a tile is one task. Outlining exactly where a tumor, a gland, or a nucleus is, *segmentation*, is another. In 2015, Olaf Ronneberger, Philipp Fischer, and Thomas Brox introduced [U-Net](https://arxiv.org/abs/1505.04597), designed for biomedical images. It compresses an image through an encoder, expands it back through a decoder, and passes high-resolution detail across "skip connections" so the output map is sharp. U-Net and its descendants, including the nested [UNet++](https://arxiv.org/abs/1807.10165), remain workhorses for segmentation in pathology. Part VI describes how our lab pairs this decoder idea with modern foundation-model encoders.
+Classifying a tile is one task. Outlining exactly where a tumor, a gland, or a nucleus is, *segmentation*, is another. In 2015, Olaf Ronneberger, Philipp Fischer, and Thomas Brox introduced [U-Net](https://arxiv.org/abs/1505.04597), designed for biomedical images. It compresses an image through an encoder, expands it back through a decoder, and passes high-resolution detail across "skip connections" so the output map is sharp. U-Net and its descendants, including the nested [UNet++](https://arxiv.org/abs/1807.10165), remain workhorses for segmentation in pathology. A common modern recipe pairs a U-Net-style decoder with a pretrained foundation-model encoder.
 
 ### CAMELYON16: the moment that got attention
 
@@ -193,10 +193,6 @@ Starting in 2023, groups began pretraining these models on pathology itself, at 
 
 My honest assessment is that these models are a real advance, but that "bigger" has stopped being the whole story. Gains on standard benchmarks have narrowed among the top models. Diversity of the pretraining data, meaning more sites, scanners, tissues, and diseases, appears to matter at least as much as raw slide counts. Most importantly, a strong tile encoder is only part of a diagnostic system. You still need to aggregate tiles into a slide-level answer, calibrate it, and prove it works on *your* hospital's slides.
 
-{{< callout type="lab" title="Foundation models at AI4Path" >}}
-At OSU's AI4Path lab, where I work with M. Khalid Khan Niazi, I curate and annotate colorectal carcinoma whole-slide images and contribute to two foundation-model projects led by colleagues in the lab. One, **Dino-NestedUNet** (in preparation), pairs a pretrained DINOv3 vision encoder with a nested U-Net-style dense decoder for tumor bulk segmentation. Our evaluations look at how models hold up under cross-domain shift, across institutional cohorts and public datasets including CAMELYON16. The other, **ASTRA** (under review), combines several pathology foundation models into a unified slide representation for pan-cancer recognition and *text-guided* tumor localization, which is the subject of Part VII. Annotation makes one lesson obvious: the hardest part of building these systems is often deciding what the label should be. Is that a tumor boundary, or a reactive change at the edge of one?
-{{< /callout >}}
-
 {{< video id="omUJrqU1CwQ" title="A.I.'s Transformation of Pathology" who="Faisal Mahmood with Eric Topol" >}}An accessible conversation about foundation models in pathology and why they haven't yet reached most patients.{{< /video >}}
 
 ## Part VII: Language Meets Tissue (2023–present) {#part-vii}
@@ -211,7 +207,7 @@ These models use contrastive learning in the style of CLIP. An image encoder and
 
 {{< fig svg="svg/cp-vlm.svg" >}}**Teaching models the words for what they see.** Image and text encoders map tissue and captions into a shared space. That enables zero-shot classification, comparing a slide to text prompts with no task-specific training, and text-guided localization, scoring every tile against a prompt to produce a heatmap.{{< /fig >}}
 
-The practical payoff is flexibility. A model that understands the phrase "signet-ring cells" can look for them without a separately trained classifier. It can also retrieve similar cases from an archive by image or by text. And it can localize a concept a user describes in words, which is the idea behind ASTRA's text-guided tumor localization.
+The practical payoff is flexibility. A model that understands the phrase "signet-ring cells" can look for them without a separately trained classifier. It can also retrieve similar cases from an archive by image or by text. And it can localize a concept a user describes in words, producing a heatmap of where in the slide that concept appears.
 
 {{< video id="eMlx5fFNoYc" title="Attention in transformers, step by step" who="3Blue1Brown" >}}The transformer's attention mechanism, which powers vision transformers, slide encoders, and language models alike.{{< /video >}}
 
@@ -237,7 +233,7 @@ Foundation models trained with heavy color augmentation are more robust to obvio
 
 ### Labels, again
 
-The Elmore data from Part I come back here. If experts agree on atypia only about half the time, a model trained on one institution's labels inherits that institution's thresholds. Better labels come from consensus panels, outcome data, or molecular ground truth where it exists. Better evaluation reports performance where it matters clinically, not just overall AUC. For many tasks, sensitivity at a fixed, high specificity is the number a pathologist actually needs.
+The Elmore data from Part I come back here. Anyone who has annotated slides learns quickly that the hardest part is often deciding what the label should be: is that a tumor boundary, or a reactive change at the edge of one? If experts agree on atypia only about half the time, a model trained on one institution's labels inherits that institution's thresholds. Better labels come from consensus panels, outcome data, or molecular ground truth where it exists. Better evaluation reports performance where it matters clinically, not just overall AUC. For many tasks, sensitivity at a fixed, high specificity is the number a pathologist actually needs.
 
 ### Validation, regulation, and reimbursement
 

@@ -1,0 +1,19 @@
+{
+  "type": "hbar",
+  "title": "Pharma pays for platforms and validated targets",
+  "subtitle": "Selected RNA-medicine deals, US$ millions, log scale. Acquisitions show headline equity value; licensing deals show upfront cash.",
+  "marks": "dot", "scale": "log", "min": 100, "max": 20000,
+  "ticks": [100, 1000, 10000], "tickLabels": ["$100M", "$1B", "$10B"],
+  "labelWidth": 280, "valueHead": "Value",
+  "items": [
+    {"group": "ACQUISITIONS", "label": "Merck buys Sirna (2006)", "value": 1100, "display": "~$1.1B", "slot": 0, "detail": "Merck acquires RNAi company Sirna Therapeutics."},
+    {"group": "ACQUISITIONS", "label": "Alnylam buys Sirna from Merck (2014)", "value": 175, "display": "~$175M", "slot": 0, "em": true, "detail": "During the 'RNAi winter', Merck exits RNAi and sells Sirna to Alnylam for about $175M upfront in cash and stock, plus milestones."},
+    {"group": "ACQUISITIONS", "label": "Novartis buys The Medicines Co. (2020)", "value": 9700, "display": "$9.7B", "slot": 0, "detail": "For inclisiran, a twice-yearly PCSK9 siRNA licensed from Alnylam."},
+    {"group": "ACQUISITIONS", "label": "Novo Nordisk buys Dicerna (2021)", "value": 3300, "display": "$3.3B", "slot": 0, "detail": "For Dicerna's GalXC RNAi platform."},
+    {"group": "ACQUISITIONS", "label": "BioNTech buys CureVac (2025)", "value": 1250, "display": "~$1.25B", "slot": 0, "detail": "All-stock acquisition of an mRNA peer, announced June 2025."},
+    {"group": "ACQUISITIONS", "label": "Lilly buys Verve (2025)", "value": 1300, "display": "up to ~$1.3B", "slot": 0, "detail": "In vivo base editing of PCSK9 and other cardiovascular genes, delivered as mRNA in lipid nanoparticles. Includes a contingent value right."},
+    {"group": "ACQUISITIONS", "label": "Novartis buys Avidity (2025–26)", "value": 12000, "display": "~$12B", "slot": 0, "em": true, "detail": "Antibody–oligonucleotide conjugates that deliver RNA drugs to muscle. Announced October 2025, closed February 2026."},
+    {"group": "LICENSING (UPFRONT)", "label": "AstraZeneca–Ionis, eplontersen (2021)", "value": 200, "display": "$200M", "slot": 2, "detail": "Upfront payment for rights to an antisense drug for transthyretin amyloidosis."},
+    {"group": "LICENSING (UPFRONT)", "label": "Roche–Alnylam, zilebesiran (2023)", "value": 310, "display": "$310M", "slot": 2, "detail": "Upfront for a hypertension siRNA, with up to about $2.8B in total potential payments."}
+  ]
+}

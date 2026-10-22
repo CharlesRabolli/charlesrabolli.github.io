@@ -20,11 +20,11 @@ Then open http://localhost:1313.
 | Education and training | `data/education.yaml` |
 | Publications | `data/publications.yaml` |
 | RNA biology deep dive | `content/rna-biology/index.md` |
+| RNA therapeutics deep dive | `content/rna-therapeutics/index.md` |
 | Computational pathology deep dive | `content/computational-pathology/index.md` |
 | Chart data (timelines, PubMed counts, etc.) | `assets/data/*.json` |
 | Diagrams (inline SVG, theme-aware) | `assets/svg/*.svg` |
 | Styles / scripts | `assets/css/main.css`, `assets/js/*.js` |
-| CV PDF | `static/uploads/Rabolli_CV.pdf` |
 
 ## Writing shortcodes (for the long-form pages)
 

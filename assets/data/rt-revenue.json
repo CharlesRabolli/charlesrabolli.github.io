@@ -1,0 +1,49 @@
+{
+ "type": "line",
+ "title": "Compounding versus a windfall",
+ "subtitle": "Alnylam's net product revenue versus Moderna's total revenue, in US$ billions (company 10-K filings and annual reports).",
+ "xmin": 2019,
+ "xmax": 2025,
+ "xTicks": 1,
+ "yLabel": "US$ billions",
+ "padR": 160,
+ "valuePrefix": "$",
+ "valueSuffix": "B",
+ "valueFormat": "raw",
+ "annotations": [
+  {
+   "x": 2020.95,
+   "label": "COVID-19 vaccine authorized",
+   "right": true
+  }
+ ],
+ "series": [
+  {
+   "name": "Moderna (total revenue)",
+   "slot": 2,
+   "values": {
+    "2019": 0.06,
+    "2020": 0.8,
+    "2021": 18.47,
+    "2022": 19.26,
+    "2023": 6.85,
+    "2024": 3.24
+   },
+   "labelDy": -30
+  },
+  {
+   "name": "Alnylam (product revenue)",
+   "slot": 1,
+   "labelDy": 8,
+   "values": {
+    "2019": 0.17,
+    "2020": 0.36,
+    "2021": 0.66,
+    "2022": 0.89,
+    "2023": 1.24,
+    "2024": 1.65,
+    "2025": 2.99
+   }
+  }
+ ]
+}
